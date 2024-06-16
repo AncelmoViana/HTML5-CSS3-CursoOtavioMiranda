@@ -8,15 +8,187 @@
         body{
             font-family: sans-serif;
         }
+        label{
+          
+            cursor: pointer;
+        }
+      
     </style>
 </head>
 <body>
 
     <form action="#" method="get" target="_blank" autocomplete="off">
-        <p>O meu Formulário</p>
+        </p> O meu Formulário</p>
         <p>
-            <input type="text" id="nome" name="nome " placeholder="Seu nome" value="Ancelmo Viana">
+
+            <p>Tipo texto</p>
+            <label>
+                Nome:
+                <input type="text" id="nome" name="nome " placeholder="Seu nome" required >
+            </label>
         </p>
+       
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+      
+
+        <p>Outra forma de utilizar o label</p>
+        <p>
+           
+               <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome " placeholder="Seu nome"  required>
+            
+        </p>
+       
+
+        <p>
+            <button type="submit" class="btn">Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+
+        <hr>
+        <p>Tipo checkbox</p>
+
+        <p>
+            <label for="dev">Sou um Dev:</label>
+            <input type="checkbox" id="dev"  placeholder="Seu nome" value="sim" >
+        </p>
+        <p>
+            <button type="submit" >Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+        <hr>
+
+        <p>Tipo Radio</p>
+        <p>
+            <p>Gênero</p>
+            <label for="masc">Masculino</label>
+            <input type="radio" id="masc" name="genero" value="masculino"> <br>
+            <label for="fem">Feminino</label>
+            <input type="radio" id="fem" name="genero" value="feminino">
+            
+                <p>
+                    <button type="submit" >Enviar</button>
+                    <button type="reset">Reset</button>
+                </p>
+            
+        </p>
+        <hr>
+
+        
+        <p>
+        <p>Input de data date</p>
+        <label for="data">Date:</label>
+        <input type="date" id="data" name="data">
+            <p>
+                <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+            </p>
+        </p>
+        <hr>
+
+        <p>
+            <p>input tipo time</p>
+            <label for="time"></label>
+            <input type="time" id="time" name="time" value="08:00">
+            <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+            </p>
+        </p>
+        <hr>
+
+        <p>
+            <p>Tipo cor</p>
+            <label for="cor">Cor Preferida</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+        </p>
+            
+        <hr>
+
+        <p>
+            <p>Tipo email</p>
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="ex: email@email.com">
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+        </p>
+        <hr>
+        <p>
+            <p>Tipo Senha</p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha">
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+        
+        </p>
+        <hr>
+
+        <p>
+            <p>Tipo arquivo</p>
+            <label for="file">Sua Foto:</label>
+            <input type="file" id="file" name="file" accept=" image/*" multiple>
+
+            <p>
+                 <button type="submit">Enviar</button>
+                 <button type="reset">Reset</button>
+            </p>
+        </p>
+        <hr>
+        <p>
+            <p>tipo number</p>
+            <label for="number">Digite um numero:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um número" min="10" max="50" step="5">
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+            
+        </p>
+        <hr>
+        <p>
+            <p>Select</p>
+            <label for="select">Selecione uma opção</label>
+            <select name="select" id="select">
+                <option value="um">um</option>
+                <option value="dois">dois</option>
+                <option value="três">três</option>
+                <option value="quatro">quatro</option>
+                <option value="cinco">cinco</option>
+            </select>
+        </p>
+        <hr>
+        <p>
+            <p>Tipo textarea</p>
+            <label for="textarea">textarea</label>
+            <textarea name="textarea" id="textarea"></textarea>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+         
+        </p>
+        
+        
+           
+            
+            
+
+            
+        
 
     </form>
     
