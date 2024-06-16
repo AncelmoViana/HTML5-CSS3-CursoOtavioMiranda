@@ -14,3 +14,6 @@ body div section p{
 .main-content .heading{
     font-style: italic;
 }
+.pai > .filha > .filha{
+    color: red;
+}
