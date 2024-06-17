@@ -1,4 +1,3 @@
-.pai .lista li:last-child {
-    background-color: red;
+p:not(.p1){
+    color: blue ;
 }
-
