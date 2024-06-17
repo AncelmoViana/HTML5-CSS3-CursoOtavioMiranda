@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletore css Básicos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="pai">
+        <h1 class="heading" meu-atributo="A B C D">titulo 1</h1>
+        <p>Combinador Irmão Adjacente
+            O combinador irmão adjacente + seleciona o elemento que vem imediatamente depois do primeiro elemento.
+            
+            <pre>
+                h2 + p {
+                  color: green;
+                }
+            </pre></p>
+            <br>
+
+        <p>
+            Combinador Irmão Geral
+            O combinador irmão geral ~ é mais abrangente, selecionando todos os elementos que seguem o primeiro.
+
+            <pre>
+                h2 ~ p {
+                    color: green;
+                    }
+            </pre>
+        </p>
+
+            
+
+
+        <h1>titulo 2</h1>
+        <p>
+            Combinador de Filho
+            O combinador de filho > seleciona apenas os elementos que são filhos diretos do primeiro elemento.
+            
+            <pre>
+                div > p {
+                  color: blue;
+                }
+            </pre>
+        </p>
+        <p>
+            Combinador de Descendente
+        O combinador de descendente (espaço) é o mais generoso, selecionando todos os elementos que são descendentes do primeiro, sejam filhos diretos ou não.
+
+        <pre>
+            div p {
+            color: blue;
+            }
+        </pre>
+        </p>
+        <h1 class="teste" meu-atributo="valor">titulo 2</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore ad quisquam ea deleniti repellendus adipisci consequuntur officiis, obcaecati nostrum, quos suscipit labore quibusdam expedita, commodi neque dicta assumenda aspernatur.
+
+    </div>
+</body>
+</html>
