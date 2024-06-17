@@ -1,0 +1,12 @@
+
+body{
+    color: blue;
+    font-size: 35px;
+    background-color: aliceblue;
+
+}
+#texto{
+    color: red;
+    font-size: initial;
+    color: inherit ;
+}
