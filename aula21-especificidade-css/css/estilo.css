@@ -1,0 +1,7 @@
+
+#id {
+    color: red !important;
+}
+.class#id{
+    color: blue;
+}
