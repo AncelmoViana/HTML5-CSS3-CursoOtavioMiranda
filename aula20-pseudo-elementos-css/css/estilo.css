@@ -1,0 +1,14 @@
+ul li::after{
+    content: ' ::after';
+    color: blue;
+}
+ul li::before{
+    content: ' ::before ';
+    color:  green;
+}
+p::first-letter{
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
