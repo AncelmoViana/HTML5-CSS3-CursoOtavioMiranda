@@ -1,7 +1,36 @@
 @charset "UTF-8";
-[meu-atributo="valor"]{
-    color: red;
+.heading{
+    transition: all 1s ease-in-out;
 }
-[meu-atributo~="C"]{
-    color: blue;
+.heading:hover{
+    background-color: red;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:link{
+    color: deeppink;
+}
+a:visited{
+    color: firebrick;
+}
+a:hover{
+    background-color: darkslateblue;
+    
+}
+a:active{
+    background-color: aqua;
+}
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border:  1px solid black;
+}
+input:disabled{
+    background-color: red;
+    cursor: not-allowed;
+}
+input:checked + p{
+    background-color: red;
 }
