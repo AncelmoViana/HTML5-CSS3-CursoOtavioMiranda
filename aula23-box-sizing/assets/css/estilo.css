@@ -1,0 +1,12 @@
+.texto{
+    box-sizing: border-box;
+    background-color: gray;
+    overflow:  auto;
+    max-width: 200px;
+    min-width: 20px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    
+  
+}  
