@@ -18,6 +18,7 @@ header{
 header h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
+   
     
 
 }
@@ -29,6 +30,8 @@ main{
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 30px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.413);
+    
 
 }
 main h1{
