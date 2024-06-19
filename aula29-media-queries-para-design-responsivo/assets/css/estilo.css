@@ -27,3 +27,18 @@
     background-color: blue;
 }
 
+@media all and (max-width: 568px){
+    .grid .col{
+        width: 100%;
+    }
+}
+@media all and  (min-width: 569px) and (max-width: 768px){
+    .grid .col{
+        width: 50%;
+    }
+}
+@media all and (min-width: 1200px){
+    .grid .col{
+        width: 25%;
+    }
+}
