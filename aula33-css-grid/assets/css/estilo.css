@@ -3,42 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-.flex-container{
-
-    display: flex;
-    flex-direction: row;
-    background-color: yellow;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row nowrap;
-    height: 800px;
-
-
-
-
+body{
+    font-style: sans-serif;
+    font-size: 40px;
 }
-.flex-item{
-    width: 100%;
-    color: white;
-    background-color: red;
-  
-  
-}
-.flex-item:nth-child(1){
-    order: 5 ;
-}
-.flex-item:nth-child(2){
-    order: 4;
-
-}
-.flex-item:nth-child(3){
-    order:3;
-}
-.flex-item:nth-child(4){
-    order: 2;
-}
-.flex-item:nth-child(5){
-    order: 1;
+.grid{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 3px;
 }
 
-  
+.grid div{
+    background-color: tomato;
+    min-height: 100px;
+}
+.grid div:nth-child(1){
+    background-color: darkred;
+    grid-area: 1 / 1 / 3 / 3 ;
+}
+
