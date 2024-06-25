@@ -4,27 +4,69 @@
     padding: 0;
 }
 body{
+    position: relative;
     background-color: black;
-}
-.coracao, .coracao1, .coracao2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
-    background-color: red;
-    width: 300px;
-    height: 300px;
-    transform: rotate(45deg);
-    border-radius: 50% 50% 0px 50%;
+    
+  
    
 }
-.coracao1{
+.coracao{
     position: absolute;
-    background-color: blue;
-    border-radius: 50%;
-    top:50%;
-    left: 47%;
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 300px;
+    top: 100px;
+    left: 40%;
+    animation: bater 5s infinite;
+   
+   
+    
+}
+    
+   
+
+.coracao::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 70px;
+    left: 40%;
+    background-color: red;
+    transform: rotate(50deg);
+    transform-origin: 200px;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 5px 5px 8px 8px rgba(255, 0, 0, 0.416);
+
+}
+
+.coracao::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: -110px;
+    left: 2%;
+    background-color: red;
+    transform: rotate(-50deg);
+    transform-origin: 235px;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 5px 5px 8px 8px rgba(255, 0, 0, 0.416);
+  
+}
+.coracao:hover{
+    transform: scale(1.5);
+}
+@keyframes bater {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
