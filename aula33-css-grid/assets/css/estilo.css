@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    height: 800px;
+
+
+
+
+}
+.flex-item{
+    width: 100%;
+    color: white;
+    background-color: red;
+  
+  
+}
+.flex-item:nth-child(1){
+    order: 5 ;
+}
+.flex-item:nth-child(2){
+    order: 4;
+
+}
+.flex-item:nth-child(3){
+    order:3;
+}
+.flex-item:nth-child(4){
+    order: 2;
+}
+.flex-item:nth-child(5){
+    order: 1;
+}
+
+  
