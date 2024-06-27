@@ -10,9 +10,53 @@ header{
     background-color: rgba(0, 0, 0, 0.671);
     color: white;
     min-height: 150px;
-    text-align: center;
+  
+  
 }
 header h1{
     padding-top: 45px;
     font-size: 3em;
+    text-align: center;
+}
+
+
+main{
+    min-width: 320px;
+    max-width: 920px;
+    background-color: white;
+    margin: auto;
+    
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.422);
+}
+div{
+    
+    position: relative;
+    padding: 20px;
+    margin: -30px 0;
+    padding-bottom: 57%;
+}
+div iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+hr{
+    margin-top: 50px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 5px;
+    color: white;
+    font-size: 0.90em;
+    text-align: center;
 }
