@@ -1,3 +1,7 @@
+:root{
+    --cor-principal: #003262;
+}
+
 body{
    position: relative;
     
@@ -5,11 +9,16 @@ body{
     
     
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .fundo{
     background-image: url('../imagens/fundo.jpeg');
     background-position: center center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 280px;
     margin-top: 4%;
     margin-bottom: 500px;
@@ -36,14 +45,14 @@ body{
    text-align: center;
    font-family: roboto;
    font-weight: normal;
-   width: 350px;
- 
-   height: 550px;
-  
-   box-shadow: 0 0 3px black;
+   width: 400px;
+   color: var(--cor-principal);
+   height: 580px;
+
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
    padding: 15px;
    background-color: white;
-   top: 120px;
+   top: 85px;
    left: 50%;
    transform: translate(-50%);
    border-radius: 10px;
@@ -53,21 +62,83 @@ body{
   
 }
 .formulario h1{
-    color: #003262;
-    font-size: 3em;
-    margin: 5px 
+    font-size: 4em;
+    margin: 5px;
+    font-weight: lighter;
+    
    
   
 }
 .formulario h2{
-    color: #003262;
     font-size: 1.8em;
     margin-top: 5px;
     margin-bottom: 30px;
+    font-weight: lighter;
+    
   
 }
 .formulario h3{
-    color: #003262;
     font-size: 1.5em;
+    padding: 20px;
+    font-weight: lighter;
   
 }
+.formulario form input{
+    width: 320px;
+    height: 35px;
+    padding: 0px 10px;
+    margin-top: 45px;
+}
+.formulario form .nome-conta p, .formulario form .senha p{
+    position: absolute;
+    font-size: 0.75em;
+    border: 1px solid white;
+    height: 15px;
+    width: 90px;
+    border-radius: 2.5px;
+    top: 272px;
+    margin-left: 35px;
+    z-index: 1;
+    background-color: white;
+}
+.formulario form .senha p{
+    top: 372px;
+    width: 48px;
+}
+.formulario form  a{
+    display: block;
+    color: #3D5567;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 25px;
+}
+.formulario form ul #entrar a{
+    background-color: #003262;
+    color: white;
+    padding: 15px 20px;
+    width: 95px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 27px;
+}
+
+.formulario form ul #entrar-com-sso a{
+    background-color: white;
+    color: #003262;
+    padding: 15px 5px;
+    width: 190px;
+    border-radius: 10px;
+    border: 2px solid #003262;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 10px;
+
+}
+.formulario form ul{
+    list-style-type: none;
+    display: flex;
+}
+
