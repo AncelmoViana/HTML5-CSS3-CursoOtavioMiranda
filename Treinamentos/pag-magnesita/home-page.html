@@ -18,11 +18,11 @@
 
     <div class="formulario">
       
-            <input type="button" value="pt" class="lang">
+            <input type="button" value="pt" class="lang" id="pt" onclick="pt()">
 
-            <input type="button" value="en" class="lang">
+            <input type="button" value="en" class="lang" id="en" onclick="en()">
 
-            <input type="button" value="es" class="lang">
+            <input type="button" value="es" class="lang" id="es" onclick="es()">
 
             
        
@@ -32,7 +32,7 @@
         <h3>ATTRACT TO GROW</h3>
         
         <form action="#" method="get" target="_blank">
-            <label for="nome" class="nome-conta"><p>Nome da Conta</p> </label>
+            <label for="nome" class="nome-conta" ><p id="nome-conta">Nome da Conta</p> </label>
                
             <input type="text" id="nome" placeholder="Nome da Conta">
             <p><a href="#">Esqueci meu usuário</a></p>
@@ -54,5 +54,8 @@
           
         </form>
     </div>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
