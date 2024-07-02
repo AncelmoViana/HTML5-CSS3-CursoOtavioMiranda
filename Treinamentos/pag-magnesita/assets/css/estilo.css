@@ -2,13 +2,7 @@
     --cor-principal: #003262;
 }
 
-body{
-   position: relative;
-    
-   
-    
-    
-}
+
 *{
     padding: 0;
     margin: 0;
@@ -18,26 +12,33 @@ body{
     background-image: url('../imagens/fundo.jpeg');
     background-position: center center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 280px;
     margin-top: 4%;
     margin-bottom: 500px;
 
 }
 .logo-pq{
-    position: relative;
-    top: 210px;
-    left: 90%;
+    position: absolute;
+    top: 265px;
+    left: 1100px;
    
 }
 .logo-g{
-    position: absolute;
-    background-image: url('../imagens/logo-grande.png');
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    top: 300px;
-    left: 660px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo-g img{
+  
+ width: 300px;
+ height: 400px;
+ object-fit: cover;
+ object-position: -60px 0px;
+  
+  
+  
+   
     
 }
 .formulario{
@@ -63,7 +64,6 @@ body{
 }
 .formulario h1{
     font-size: 4em;
-    margin: 5px;
     font-weight: lighter;
     
    
@@ -72,7 +72,7 @@ body{
 .formulario h2{
     font-size: 1.8em;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-weight: lighter;
     
   
@@ -113,10 +113,9 @@ body{
     margin-right: 25px;
 }
 .formulario form ul #entrar a{
-    background-color: #003262;
+    background-color: var(--cor-principal);
     color: white;
-    padding: 15px 20px;
-    width: 95px;
+    padding: 15px 25px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
@@ -126,19 +125,27 @@ body{
 
 .formulario form ul #entrar-com-sso a{
     background-color: white;
-    color: #003262;
-    padding: 15px 5px;
-    width: 190px;
+    color: var(--cor-principal);
+    padding: 15px 22px;
     border-radius: 10px;
-    border: 2px solid #003262;
+    border: 2px solid var(--cor-principal);
     text-align: center;
     font-weight: bold;
     margin-top: 25px;
-    margin-left: 10px;
+  
 
 }
 .formulario form ul{
     list-style-type: none;
     display: flex;
+}
+.formulario form #link-final{
+    color: var(--cor-principal);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-top: 30px;
+
 }
 
