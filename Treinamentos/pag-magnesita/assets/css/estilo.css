@@ -48,12 +48,11 @@
    font-weight: normal;
    width: 400px;
    color: var(--cor-principal);
-   height: 600px;
-
+   height: 630px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
    padding: 15px;
    background-color: white;
-   top: 85px;
+   top: 125px;
    left: 50%;
    transform: translate(-50%);
    border-radius: 10px;
@@ -74,7 +73,12 @@
     border-radius: 3px;
    
 }
+.formulario #pt{
+    background-color: var(--cor-principal);
+    color: #ffffff;
+}
 .formulario h1{
+    margin-top: 30px;
     font-size: 4em;
     font-weight: lighter;
     
@@ -84,7 +88,7 @@
 .formulario h2{
     font-size: 1.8em;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: lighter;
     
   
@@ -97,9 +101,9 @@
 }
 .formulario form input{
     width: 320px;
-    height: 35px;
+    height: 45px;
     padding: 0px 10px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 .formulario form .nome-conta p, .formulario form .senha p{
     position: absolute;
@@ -108,13 +112,13 @@
     height: 15px;
     width: 90px;
     border-radius: 2.5px;
-    top: 272px;
+    top: 300px;
     margin-left: 35px;
     z-index: 1;
     background-color: white;
 }
 .formulario form .senha p{
-    top: 372px;
+    top: 405px;
     width: 48px;
 }
 .formulario form  a{
@@ -158,6 +162,7 @@
     font-size: 0.85em;
     font-weight: bold;
     margin-top: 30px;
+    
 
 }
 

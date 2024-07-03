@@ -35,14 +35,14 @@
             <label for="nome" class="nome-conta" ><p id="nome-conta">Nome da Conta</p> </label>
                
             <input type="text" id="nome" placeholder="Nome da Conta">
-            <p><a href="#">Esqueci meu usuário</a></p>
+            <p id="esqueciMeuUsuario"><a href="#">Esqueci meu usuário</a></p>
            
    
 
-            <label for="senha" class="senha"><p>Senha</p></label>
+            <label for="senha" class="senha" ><p id="senha">Senha</p></label>
             
             <input type="password" name="senha" id="senha" placeholder="Senha">
-            <p><a href="#"><p>Esqueci minha senha</p></a></p>
+            <p id="esqueciMinhaSenha"><a href="#">Esqueci minha senha</a></p>
             
             <ul>
                 <li id="entrar"><a href="#">ENTRAR</a></li>
@@ -57,5 +57,8 @@
 
 
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript">
+        document.getElementById('nome')[0].placeholder= 'teste';
+    </script>
 </body>
 </html>
