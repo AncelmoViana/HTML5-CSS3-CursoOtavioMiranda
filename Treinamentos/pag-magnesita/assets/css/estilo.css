@@ -100,12 +100,17 @@
   
 }
 .formulario form input{
+    border-radius: 3px;
     width: 320px;
     height: 45px;
     padding: 0px 10px;
     margin-top: 40px;
+    border: 1px solid #CCCCCC;
 }
-.formulario form .nome-conta p, .formulario form .senha p{
+.formulario form input:focus-within{
+
+}
+.formulario form p .nome-conta , .formulario form p .senha {
     position: absolute;
     font-size: 0.75em;
     border: 1px solid white;
@@ -113,14 +118,22 @@
     width: 90px;
     border-radius: 2.5px;
     top: 300px;
-    margin-left: 35px;
+    margin-left: -150px;
     z-index: 1;
     background-color: white;
 
 }
-.formulario form .senha p{
+.formulario form p .senha {
+    position: absolute;
     top: 405px;
     width: 48px;
+    
+}
+
+.formulario form input::placeholder{
+    font-family: roboto;
+    font-size: 1.2em;
+    opacity: 0.5;
 }
 .formulario form  a{
     display: block;
@@ -165,21 +178,4 @@
     margin-top: 30px;
     
 
-}
-#form-en{
-    z-index: ;
-}
-#login{
-    width: 45px;
-}
-#password{
-    width: 70px;
-}
-#en{
-    background-color: var(--cor-principal);
-    color: white;
-    font-weight: bolder;
-}
-#form-pt{
-    z-index: 1;
 }
