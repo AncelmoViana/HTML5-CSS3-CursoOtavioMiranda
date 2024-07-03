@@ -16,13 +16,18 @@
     </div>
     <div class="logo-g"><img src="assets/imagens/logo-grande.png" alt="logo da magnesita"></div>
 
-    <div class="formulario">
+
+
+
+
+
+    <div class="formulario" id="form-pt">
       
-            <input type="button" value="pt" class="lang" id="pt" onclick="pt()">
+            <input type="button" value="pt" id="pt" class="lang"  onclick="pt()">
 
-            <input type="button" value="en" class="lang" id="en" onclick="en()">
+            <input type="button" value="en" class="lang"  onclick="en()">
 
-            <input type="button" value="es" class="lang" id="es" onclick="es()">
+            <input type="button" value="es" class="lang"  onclick="es()">
 
             
        
@@ -32,16 +37,16 @@
         <h3>ATTRACT TO GROW</h3>
         
         <form action="#" method="get" target="_blank">
-            <label for="nome" class="nome-conta" ><p id="nome-conta">Nome da Conta</p> </label>
+            <label for="nome" class="nome-conta" ><p class="nome-conta">Nome da Conta</p> </label>
                
-            <input type="text" id="nome" placeholder="Nome da Conta">
+            <input type="text" class="nome" placeholder="Nome da Conta">
             <p id="esqueciMeuUsuario"><a href="#">Esqueci meu usuário</a></p>
            
    
 
             <label for="senha" class="senha" ><p id="senha">Senha</p></label>
             
-            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <input type="password" name="senha" class="senha" placeholder="Senha">
             <p id="esqueciMinhaSenha"><a href="#">Esqueci minha senha</a></p>
             
             <ul>
@@ -56,9 +61,44 @@
     </div>
 
 
-    <script src="assets/js/script.js"></script>
-    <script type="text/javascript">
-        document.getElementById('nome')[0].placeholder= 'teste';
-    </script>
+    <div class="formulario" id="form-en">
+      
+        <input type="button" value="pt" class="lang"  onclick="pt()">
+
+        <input type="button" value="en"  id="en" class="lang"  onclick="en()">
+
+        <input type="button" value="es" class="lang"  onclick="es()">
+
+        
+   
+    
+    <h1>PAG</h1>
+    <h2>PORTAL</h2>
+    <h3>ATTRACT TO GROW</h3>
+    
+    <form action="#" method="get" target="_blank">
+        <label for="nome" class="nome-conta" ><p id="login">Login</p> </label>
+           
+        <input type="text" id="nome" placeholder="Login">
+        <p id="esqueciMeuUsuario"><a href="#">Forgot my username</a></p>
+       
+
+
+        <label for="senha" class="senha" ><p id="password">password</p></label>
+        
+        <input type="password" name="senha" id="senha" placeholder="password">
+        <p id="esqueciMinhaSenha"><a href="#">Forgot my password</a></p>
+        
+        <ul>
+            <li id="entrar"><a href="#">ENTER</a></li>
+            <li id="entrar-com-sso"><p><a href="#">ENTER WITH SSO</a></p></li>
+        </ul>
+        
+      
+    </form>
+</div>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

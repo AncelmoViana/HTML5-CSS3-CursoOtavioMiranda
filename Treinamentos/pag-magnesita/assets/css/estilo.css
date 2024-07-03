@@ -116,6 +116,7 @@
     margin-left: 35px;
     z-index: 1;
     background-color: white;
+
 }
 .formulario form .senha p{
     top: 405px;
@@ -165,4 +166,20 @@
     
 
 }
-
+#form-en{
+    z-index: ;
+}
+#login{
+    width: 45px;
+}
+#password{
+    width: 70px;
+}
+#en{
+    background-color: var(--cor-principal);
+    color: white;
+    font-weight: bolder;
+}
+#form-pt{
+    z-index: 1;
+}
