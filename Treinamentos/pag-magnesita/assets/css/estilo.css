@@ -1,7 +1,8 @@
 body{
-    min-width: 350px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    overflow-x: hidden;
+
    
  
  
@@ -24,12 +25,16 @@ body{
     height: 280px;
     margin-top: 4%;
     margin-bottom: 500px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    
+
 
 }
-.logo-pq{
-    position: absolute;
-    top: 265px;
-    left: 1100px;
+.fundo .logo-pq{
+    
+   margin: 0px 3% 1% 0px;
    
 }
 .caixa-logo{
@@ -38,16 +43,15 @@ body{
    align-items: end;
    justify-content: end;
  
-   
-   
-   }
+}
 
 .logo-g img{
+position: relative;
+top: -480px;
+margin-left: 720px;
+width: 100%;
 
-width: 350px;
-height: 450px;
-object-fit: cover;
-object-position: -60px 0px;
+
  
   
   
@@ -69,6 +73,7 @@ object-position: -60px 0px;
    margin: -200px;
    margin-top: -150px;
    border-radius: 10px;
+   
    
 
   
