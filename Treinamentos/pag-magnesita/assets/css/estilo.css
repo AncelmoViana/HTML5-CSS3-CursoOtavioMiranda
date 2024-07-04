@@ -1,6 +1,4 @@
 body{
-    width: 100%;
-    height: 100vh;
     overflow-x: hidden;
 
    
@@ -58,11 +56,12 @@ width: 100%;
 }
 
 .formulario{
-   position: absolute;
+    position: absolute;
    text-align: center;
    font-family: roboto;
    font-weight: normal;
-   width: 400px;
+   max-width: 400px;
+   min-width: 350;
    color: var(--cor-principal);
    height: 630px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
