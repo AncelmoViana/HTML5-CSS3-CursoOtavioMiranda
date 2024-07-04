@@ -21,7 +21,7 @@
 
 
 
-    <div class="formulario">
+    <div class="formulario" id="formulario">
       
             <input type="button" value="pt" id="pt" class="lang" onclick="pt()">
 
@@ -37,20 +37,20 @@
         <h3>ATTRACT TO GROW</h3>
         
         <form action="#" method="get" target="_blank">
-            <p><label for="nome" class="nome-conta" id="nome-conta">Nome da Conta</label></p>
+            <p  ><label for="nome" id="nome-conta" class="nome-conta" >Nome da Conta</label></p>
                
             <input type="text" id="nome" class="nome" name="nome" placeholder="Nome da Conta">
-            <a href="#">Esqueci meu usuário</a>
+            <a href="#" id="esqueciUsuario">Esqueci meu usuário</a>
            
    
 
-           <p><label for="senha" class="senha">Senha</label></p>
+           <p><label for="input-senha" class="senha" id="senha">Senha</label></p>
             
-            <input type="password" id="senha" name="senha" class="senha" placeholder="Senha">
-            <a href="#">Esqueci minha senha</a>
+            <input type="password" id="input-senha" name="senha" class="senha" placeholder="Senha">
+            <a href="#" id="esqueciSenha">Esqueci minha senha</a>
             
             <ul>
-                <li id="entrar"><a href="#">ENTRAR</a></li>
+                <li id="entrar"><p><a href="#">ENTRAR</a></p></li>
                 <li id="entrar-com-sso"><p><a href="#">ENTRAR COM SSO</a></p></li>
             </ul>
             

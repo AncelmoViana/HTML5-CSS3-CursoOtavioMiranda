@@ -1,3 +1,8 @@
+body{
+    min-width: 350px;
+ 
+ 
+}
 :root{
     --cor-principal: #003262;
 }
@@ -24,11 +29,7 @@
     left: 1100px;
    
 }
-.logo-g{
-    display: flex;
-    flex-direction: column;
-    
-}
+
 .logo-g img{
   
  width: 300px;
@@ -52,9 +53,10 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
    padding: 15px;
    background-color: white;
-   top: 125px;
+   top: 50%;
    left: 50%;
-   transform: translate(-50%);
+   margin: -200px;
+   margin-top: -150px;
    border-radius: 10px;
    
 
@@ -106,10 +108,15 @@
     padding: 0px 10px;
     margin-top: 40px;
     border: 1px solid #CCCCCC;
+    outline: none;
 }
-.formulario form input:focus-within{
+input:focus{
+    outline-style: none;
+    box-shadow: none;
 
 }
+   
+
 .formulario form p .nome-conta , .formulario form p .senha {
     position: absolute;
     font-size: 0.75em;
