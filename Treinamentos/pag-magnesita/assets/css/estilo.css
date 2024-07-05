@@ -1,5 +1,5 @@
 body{
-    overflow-x: hidden;
+ overflow-x: hidden;
 
    
  
@@ -11,15 +11,16 @@ body{
 
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+   
 }
 .fundo{
     background-image: url('../imagens/fundo.jpeg');
     background-position: center center;
     background-size: cover;
     height: 280px;
+    width: 100vw;
     margin-top: 4%;
     margin-bottom: 500px;
     display: flex;
@@ -32,21 +33,17 @@ body{
 .fundo .logo-pq{
     
    margin: 0px 3% 1% 0px;
+  
    
-}
-.caixa-logo{
-   width:100vw;
-   display: flex;
-   align-items: end;
-   justify-content: end;
- 
 }
 
 .logo-g img{
-position: relative;
-top: -480px;
-margin-left: 720px;
-width: 100%;
+    position: relative;
+    top: -480px;
+    margin-left: 720px;
+    width: 100%;
+
+
 
 
  
