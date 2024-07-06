@@ -52,12 +52,12 @@ body{
 }
 
 .formulario{
-    position: absolute;
+   position: absolute;
    text-align: center;
    font-family: roboto;
    font-weight: normal;
-   max-width: 400px;
-   min-width: 350;
+   width: 360px;
+   
    color: var(--cor-principal);
    height: 630px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
@@ -65,7 +65,7 @@ body{
    background-color: white;
    top: 50%;
    left: 50%;
-   margin: -200px;
+   margin: -180px;
    margin-top: -150px;
    border-radius: 10px;
    
@@ -114,7 +114,7 @@ body{
 }
 .formulario form input{
     border-radius: 3px;
-    width: 320px;
+    width: 300px;
     height: 45px;
     padding: 0px 10px;
     margin-top: 40px;
@@ -163,12 +163,11 @@ input:focus{
 .formulario form ul #entrar a{
     background-color: var(--cor-principal);
     color: white;
-    padding: 15px 25px;
+    padding: 15px 24px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
-    margin-top: 25px;
-    margin-left: 27px;
+    margin:  25px 0px 0px 30px;
 }
 
 .formulario form ul #entrar-com-sso a{
@@ -179,7 +178,7 @@ input:focus{
     border: 2px solid var(--cor-principal);
     text-align: center;
     font-weight: bold;
-    margin-top: 25px;
+    margin:  25px 0px 0px 20px;
   
 
 }

@@ -44,11 +44,11 @@ function pt(){
     entrar.innerHTML = 'ENTRAR';
     entrar.style.backgroundColor = '#003262';
     entrar.style.color = '#ffffff';
-    entrar.style.padding = '15px 25px';
+    entrar.style.padding = '15px 24px';
     entrar.style.borderRadius= '5px';
     entrar.style.textAlign= 'center';
     entrar.style.fontWeight= 'bold';
-    entrar.style.margin= '25px 0px 0px 27px';
+    entrar.style.margin= '25px 0px 0px 30px';
 
 
     entrarComSSO.innerHTML = 'ENTRAR COM SSO';
@@ -58,7 +58,7 @@ function pt(){
     entrarComSSO.style.borderRadius= '10px';
     entrarComSSO.style.textAlign= 'center';
     entrarComSSO.style.fontWeight= 'bold';
-    entrarComSSO.style.margin= '25px 0px 0px 35px';
+    entrarComSSO.style.margin= '25px 0px 0px 20px';
     entrarComSSO.style.border = '2px solid #003262';
     entrarComSSO.style.marginTop = '25px';
 
@@ -163,7 +163,7 @@ function es(){
     entrar.style.borderRadius= '5px';
     entrar.style.textAlign= 'center';
     entrar.style.fontWeight= 'bold';
-    entrar.style.margin= '25px 0px 0px 27px';
+    entrar.style.margin= '25px 0px 0px 30px';
 
 
     entrarComSSO.innerHTML = 'ENTRAR CON SSO';
@@ -173,7 +173,7 @@ function es(){
     entrarComSSO.style.borderRadius= '10px';
     entrarComSSO.style.textAlign= 'center';
     entrarComSSO.style.fontWeight= 'bold';
-    entrarComSSO.style.margin= '25px 0px 0px 35px';
+    entrarComSSO.style.margin= '25px 0px 0px 20px';
     entrarComSSO.style.border = '2px solid #003262';
     entrarComSSO.style.marginTop = '25px';
 
