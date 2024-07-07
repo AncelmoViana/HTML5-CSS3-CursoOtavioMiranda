@@ -242,36 +242,40 @@ input:focus{
     .formulario form p .senha{
         top: 405px;
     }
-    .links-entrar{
-        display: block;
+   
+    
+    .formulario form .links-entrar{
+        position: relative;
+        width: 100%;
+        min-height: 135px;
+        background-color: gray;
+        
     }
-    .formulario form .links-entrar #entrar a{
+    .formulario form .links-entrar div a{
         position: absolute;
         background-color: var(--cor-principal);
         color: white;
-        padding: 15px 25px;
-        top: 465px;
-        left: 50%;
-        margin-left: -16%;
-      
+        padding: 15px 10px;
         border-radius: 5px;
         text-align: center;
         font-weight: bold;
+        top: -10px;
+        left: 31%;
        
     }
     
     .formulario form .links-entrar #entrar-com-sso a{
         position: absolute;
+        padding: 15px 15px;
         background-color: white;
         color: var(--cor-principal);
-        padding: 15px 22px;
         border-radius: 10px;
         border: 2px solid var(--cor-principal);
         text-align: center;
         font-weight: bold;
-        top: 530px;
-        left: 50%;
-        margin-left: -30%;
+        top: 50px;
+        
+      
        
       
     
@@ -290,8 +294,8 @@ input:focus{
     
     }
 
-    
 }
+
 @media(max-width: 376px){
     .formulario{
         position: absolute;
