@@ -251,7 +251,7 @@ input:focus{
         background-color: gray;
         
     }
-    .formulario form .links-entrar div a{
+    .links-entrar .entrar .a1{
         position: absolute;
         background-color: var(--cor-principal);
         color: white;
@@ -260,11 +260,11 @@ input:focus{
         text-align: center;
         font-weight: bold;
         top: -10px;
-        left: 31%;
+        left: 90%;
        
     }
     
-    .formulario form .links-entrar #entrar-com-sso a{
+    .formulario form .links-entrar #entrar-com-sso p a{
         position: absolute;
         padding: 15px 15px;
         background-color: white;
