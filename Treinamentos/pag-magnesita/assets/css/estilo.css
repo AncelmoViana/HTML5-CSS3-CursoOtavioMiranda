@@ -1,5 +1,6 @@
 body{
  overflow-x: hidden;
+ width: 100vw;
 
    
  
@@ -65,9 +66,12 @@ body{
    background-color: white;
    top: 280px;
    left: 50%;
-   margin: -180px;
+   margin-left: -190px;
    margin-top: -150px;
    border-radius: 10px;
+
+
+   
    
    
 
@@ -162,15 +166,19 @@ input:focus{
 }
 .links-entrar{
     display: flex;
+   
+
 }
 .formulario form .links-entrar #entrar a{
     background-color: var(--cor-principal);
     color: white;
-    padding: 15px 24px;
+    padding: 15px 25px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
     margin:  25px 0px 0px 30px;
+    
+    
 }
 
 .formulario form .links-entrar #entrar-com-sso a{
@@ -196,6 +204,10 @@ input:focus{
     font-size: 0.85em;
     font-weight: bold;
     margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 555px;
     
 
 }
@@ -212,6 +224,8 @@ input:focus{
         height: 630px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
         padding: 15px;
+        height: 660px;
+       
       
     
         left: 50%;
@@ -219,7 +233,7 @@ input:focus{
     }
     .formulario form input{
         border-radius: 3px;
-        width: 90%;
+        width: 80%;
         height: 45px;
         padding: 0px 10px;
         margin-top: 40px;
@@ -242,53 +256,53 @@ input:focus{
     .formulario form p .senha{
         top: 405px;
     }
-   
+
+    .links-entrar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+       
     
-    .formulario form .links-entrar{
-        position: relative;
-        width: 100%;
-        min-height: 135px;
-        background-color: gray;
-        
     }
-    .links-entrar .entrar .a1{
-        position: absolute;
+    .formulario form .links-entrar #entrar a{
         background-color: var(--cor-principal);
         color: white;
         padding: 15px 10px;
         border-radius: 5px;
         text-align: center;
         font-weight: bold;
-        top: -10px;
-        left: 90%;
-       
+      
+        
+        
+        
     }
     
-    .formulario form .links-entrar #entrar-com-sso p a{
-        position: absolute;
-        padding: 15px 15px;
+    .formulario form .links-entrar #entrar-com-sso a{
         background-color: white;
         color: var(--cor-principal);
+        padding: 15px 10px;
         border-radius: 10px;
         border: 2px solid var(--cor-principal);
         text-align: center;
         font-weight: bold;
-        top: 50px;
-        
-      
        
-      
-    
     }
+   
+    
+   
     .formulario form #link-final{
         position: absolute;
-        top: 590px;
-        margin-left: 13%;
+        top: 620px;
+        left: 50%;
+       
+    
         color: var(--cor-principal);
         text-decoration: underline;
-        text-align: center;
+       
         font-size: 0.85em;
         font-weight: bold;
+       
       
         
     
@@ -304,7 +318,7 @@ input:focus{
         font-weight: normal;
         width: 290px;
         color: var(--cor-principal);
-        height: 630px;
+        height: 650px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
         padding: 15px;
         left: 50%;
