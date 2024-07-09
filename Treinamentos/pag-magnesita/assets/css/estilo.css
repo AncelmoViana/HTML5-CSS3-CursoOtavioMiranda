@@ -172,10 +172,8 @@ input:focus{
    
 
 }
-.formulario form .links-entrar #entrar a{
+.formulario form .links-entrar #entrar{
     background-color: var(--cor-principal);
-    color: white;
-    padding: 15px 25px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
@@ -261,23 +259,30 @@ input:focus{
     }
 
     .links-entrar{
+        position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
+      
+        height: 180px;
+        background-color: gray;
     }
         
         
        
     
     }
-    .formulario form .links-entrar #entrar a{
+    .links-entrar #entrar {
+        position: absolute;
         background-color: var(--cor-principal);
         color: white;
-        padding: 15px 10px;
+        
         border-radius: 5px;
         text-align: center;
         font-weight: bold;
-        margin-right: 10px;
+        width: 50px;
+     
+        left: 50%;
+        
       
         
         
@@ -285,6 +290,7 @@ input:focus{
     }
     
     .formulario form .links-entrar #entrar-com-sso a{
+        position: absolute;
         background-color: white;
         color: var(--cor-principal);
         padding: 15px 15px;
@@ -292,6 +298,7 @@ input:focus{
         border: 2px solid var(--cor-principal);
         text-align: center;
         font-weight: bold;
+        top: 100px;
        
     }
     @media( max-width: 405px){
