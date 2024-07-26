@@ -55,11 +55,11 @@ body{
 }
 
 .formulario{
-    position: absolute;
+   position: absolute;
    text-align: center;
    font-family: roboto;
    font-weight: normal;
-   width: 360px;
+   width: 400px;
    
    color: var(--cor-principal);
    height: 630px;
@@ -101,7 +101,7 @@ body{
     margin-top: 30px;
     font-size: 4em;
     font-weight: lighter;
-    
+
    
   
 }
@@ -117,11 +117,11 @@ body{
     font-size: 1.5em;
     padding: 20px;
     font-weight: lighter;
-  
-}
+
+} 
 .formulario form input{
     border-radius: 3px;
-    width: 300px;
+    width: 330px;
     height: 45px;
     padding: 0px 10px;
     margin-top: 40px;
@@ -132,28 +132,35 @@ input:focus{
     outline-style: none;
     box-shadow: none;
 
-}
-   
-
-.formulario form p .nome-conta , .formulario form p .senha {
+} 
+.label-nome-conta{
     position: absolute;
-    font-size: 0.75em;
+    left: 20px;
+    top: 50px;
+}
+
+ 
+.formulario p .nome-conta , .formulario p .senha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 0.79em;
     border: 1px solid white;
     height: 15px;
     width: 90px;
     border-radius: 2.5px;
-    top: 300px;
-    margin-left: -150px;
+    transform: translate(30px,48px);
+    
     z-index: 1;
     background-color: white;
 
-}
+}  
 .formulario form p .senha {
-    position: absolute;
-    top: 405px;
-    width: 48px;
+    width: 50px;
     
-}
+} 
+label.
 
 .formulario form input::placeholder{
     font-family: roboto;
@@ -170,11 +177,13 @@ input:focus{
 .links-entrar{
     position: relative;
     display: flex;
-    flex-direction: column;
-    
-    width: 360px;
+    flex-direction: row;
+    align-content: center;
+    width: 330px;
+    height: 50px;
     background-color: rgb(154, 19, 19);
-    width: 200px;
+    
+   
    
 
 }
