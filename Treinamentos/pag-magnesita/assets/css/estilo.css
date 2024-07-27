@@ -1,6 +1,7 @@
 body{
  overflow-x: hidden;
  width: 100vw;
+ height: 150vh;
 
    
  
@@ -21,9 +22,9 @@ body{
     background-image: url('../imagens/fundo.jpeg');
     background-position: center center;
     background-size: cover;
-    height: 280px;
+    height: 336px;
     width: 100vw;
-    margin-top: 4%;
+    margin-top: 53px;
     margin-bottom: 500px;
     display: flex;
     align-items: end;
@@ -60,9 +61,10 @@ body{
    font-family: roboto;
    font-weight: normal;
    width: 400px;
+  
    
    color: var(--cor-principal);
-   height: 630px;
+   height: 650px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
    padding: 15px;
    background-color: white;
@@ -138,6 +140,13 @@ input:focus{
     left: 20px;
     top: 50px;
 }
+.formulario form  a{
+    display: block;
+    color: #3D5567;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 25px;
+}
 
  
 .formulario p .nome-conta , .formulario p .senha{
@@ -150,7 +159,7 @@ input:focus{
     height: 15px;
     width: 90px;
     border-radius: 2.5px;
-    transform: translate(30px,48px);
+    transform: translate(10px,48px);
     
     z-index: 1;
     background-color: white;
@@ -160,61 +169,55 @@ input:focus{
     width: 50px;
     
 } 
-label.
+
 
 .formulario form input::placeholder{
     font-family: roboto;
     font-size: 1.2em;
     opacity: 0.5;
 }
-.formulario form  a{
-    display: block;
-    color: #3D5567;
-    text-decoration: none;
-    text-align: right;
-    margin-right: 25px;
-}
-.links-entrar{
-    position: relative;
+.formulario form{
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    width: 330px;
-    height: 50px;
-    background-color: rgb(154, 19, 19);
-    
-   
-   
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.formulario form .links-entrar #entrar{
-    position: absolute;
-    background-color: var(--cor-principal);
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    margin:  25px 0px 0px 30px;
-    top: 10px;
-    
-    
-}
-
-.formulario form .links-entrar #entrar-com-sso a{
-    background-color: white;
-    color: var(--cor-principal);
-    padding: 15px 22px;
-    border-radius: 10px;
-    border: 2px solid var(--cor-principal);
-    text-align: center;
-    font-weight: bold;
-    margin:  25px 0px 0px 20px;
   
+.formulario form #links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 330px;
+ 
+    align-items: center;
+    justify-content: center;
+ 
+    
+    
+}
+
+.formulario form #entrar{
+    font-family: roboto;
+    font-weight: bold;
+    background-color: #003362;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 4px;
 
 }
-.formulario form ul{
-    list-style-type: none;
-    display: flex;
+.formulario form #entrar-sso{
+    font-family: roboto;
+    font-weight: bold;
+    border: 2.5px solid var(--cor-principal);
+    padding: 14px 22px;
+    border-radius: 12px;
+    color: var(--cor-principal);
+    transform: translateX(25px);
+
+
 }
+
 .formulario form #link-final{
     color: var(--cor-principal);
     text-decoration: underline;
@@ -225,200 +228,19 @@ label.
     position: absolute;
     left: 50%;
     margin-left: -100px;
-    top: 555px;
+    top: 580px;
     
 
 }
 
 @media( max-width: 500px){
-    .formulario{
-        position: absolute;
-        text-align: center;
-        font-family: roboto;
-        font-weight: normal;
-        width: 70%;
-        top:200px;
-        color: var(--cor-principal);
-        height: 630px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
-        padding: 15px;
-        height: 660px;
-      
-      
-    
-        left: 50%;
-        margin-left: -35%;
-    }
-    .formulario form input{
-        border-radius: 3px;
-        width: 80%;
-        height: 45px;
-        padding: 0px 10px;
-        margin-top: 40px;
-        border: 1px solid #CCCCCC;
-        outline: none;
-    }
-    .formulario form p .nome-conta , .formulario form p .senha {
-        position: absolute;
-        font-size: 0.75em;
-        border: 1px solid white;
-        height: 15px;
-        width: 90px;
-        border-radius: 2.5px;
-        top: 45.5%;
-        margin-left: -44%;
-        z-index: 1;
-        background-color: white;
-    
-    }
-    .formulario form p .senha{
-        top: 405px;
-    }
 
-    .links-entrar{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-      
-        height: 180px;
-        background-color: gray;
-    }
-        
-        
-       
-    
-    }
-    .links-entrar #entrar {
-        position: absolute;
-        background-color: var(--cor-principal);
-        color: white;
-        
-        border-radius: 5px;
-        text-align: center;
-        font-weight: bold;
-        width: 50px;
-     
-        left: 50%;
-        
-      
-        
-        
-        
-    }
-    
-    .formulario form .links-entrar #entrar-com-sso a{
-        position: absolute;
-        background-color: white;
-        color: var(--cor-principal);
-        padding: 15px 15px;
-        border-radius: 10px;
-        border: 2px solid var(--cor-principal);
-        text-align: center;
-        font-weight: bold;
-        top: 100px;
-       
-    }
-    @media( max-width: 405px){
-        .formulario{
-            position: absolute;
-            text-align: center;
-            font-family: roboto;
-            font-weight: normal;
-            width: 70%;
-            top:200px;
-            color: var(--cor-principal);
-            height: 630px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
-            padding: 15px;
-            height: 660px;
-          
-          
-        
-            left: 50%;
-            margin-left: -35%;
-        }
-        .formulario form input{
-            border-radius: 3px;
-            width: 80%;
-            height: 45px;
-            padding: 0px 10px;
-            margin-top: 40px;
-            border: 1px solid #CCCCCC;
-            outline: none;
-        }
-        .formulario form p .nome-conta , .formulario form p .senha {
-            position: absolute;
-            font-size: 0.75em;
-            border: 1px solid white;
-            height: 15px;
-            width: 90px;
-            border-radius: 2.5px;
-            top: 49.6%;
-            margin-left: -44%;
-            z-index: 1;
-            background-color: white;
-        
-        }
-        .formulario form p .senha{
-            top: 65.8%;
-        }
-    
-        .links-entrar{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            
-            
-           
-        
-        }
-        .formulario form .links-entrar #entrar a{
-            background-color: var(--cor-principal);
-            color: white;
-            padding: 15px 10px;
-            border-radius: 5px;
-            text-align: center;
-            font-weight: bold;
-            margin-right: 15px;
-          
-            
-            
-            
-        }
-        
-        .formulario form .links-entrar #entrar-com-sso a{
-            position: absolute;
-            top: 15px;
-            background-color: white;
-            color: var(--cor-principal);
-            padding: 15px 15px;
-            border-radius: 10px;
-            border: 2px solid var(--cor-principal);
-            text-align: center;
-            font-weight: bold;
-           
-        }
+}
    
-    
-   
-    .formulario form #link-final{
-        position: absolute;
-        top: 620px;
-        left: 50%;
-       
-    
-        color: var(--cor-principal);
-        text-decoration: underline;
-       
-        font-size: 0.85em;
-        font-weight: bold;
-       
-      
-        
-    
-    }
+@media( max-width: 405px){
 
+    
+    
 }
 
 
