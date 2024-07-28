@@ -1,7 +1,7 @@
 body{
  overflow-x: hidden;
  width: 100vw;
- height: 150vh;
+ height: 160vh;
 
    
  
@@ -71,8 +71,7 @@ body{
    top: 280px;
    margin-top: -150px;
    left: 50%;
-   margin-left: -180px;
-  
+   transform: translateX(-50%);
    border-radius: 10px;
 
 
@@ -121,18 +120,22 @@ body{
     font-weight: lighter;
 
 } 
+
 .formulario form input{
     border-radius: 3px;
-    width: 330px;
-    height: 45px;
+    width: 300px;
+    height: 42px;
     padding: 0px 10px;
     margin-top: 40px;
     border: 1px solid #CCCCCC;
     outline: none;
+    
 }
 input:focus{
     outline-style: none;
     box-shadow: none;
+    
+    
 
 } 
 .label-nome-conta{
@@ -160,6 +163,7 @@ input:focus{
     width: 90px;
     border-radius: 2.5px;
     transform: translate(10px,48px);
+    top: 200px;
     
     z-index: 1;
     background-color: white;
@@ -175,7 +179,9 @@ input:focus{
     font-family: roboto;
     font-size: 1.2em;
     opacity: 0.5;
+   
 }
+
 .formulario form{
     display: flex;
     flex-direction: column;
@@ -189,9 +195,9 @@ input:focus{
     flex-wrap: wrap;
     height: 80px;
     width: 330px;
- 
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    
  
     
     
@@ -201,7 +207,7 @@ input:focus{
     font-family: roboto;
     font-weight: bold;
     background-color: #003362;
-    padding: 15px 20px;
+    padding: 14px 20px;
     color: white;
     border-radius: 4px;
 
@@ -210,7 +216,7 @@ input:focus{
     font-family: roboto;
     font-weight: bold;
     border: 2.5px solid var(--cor-principal);
-    padding: 14px 22px;
+    padding: 13px 22px;
     border-radius: 12px;
     color: var(--cor-principal);
     transform: translateX(25px);
@@ -224,24 +230,15 @@ input:focus{
     text-align: center;
     font-size: 0.85em;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 40px;
     position: absolute;
     left: 50%;
     margin-left: -100px;
-    top: 580px;
+    top: 570px;
     
 
 }
 
-@media( max-width: 500px){
-
-}
-   
-@media( max-width: 405px){
-
-    
-    
-}
 
 
         

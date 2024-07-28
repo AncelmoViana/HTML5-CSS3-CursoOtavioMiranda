@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+
+    .formulario{
+       
+        width: 70vw;
+    
+     }
+
+    .formulario form #links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 80px;
+        width: 330px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+     
+        
+        
+    }
+    
+}
