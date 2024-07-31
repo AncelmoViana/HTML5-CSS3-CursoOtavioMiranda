@@ -3,24 +3,34 @@
 @media screen and (max-width: 600px) {
 
     .formulario{
-       
-        width: 70vw;
-    
-     }
-
+        width: 70%;
+        height: 675px;
+    }
+     
     .formulario form #links{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 80px;
-        width: 330px;
+        flex-direction: column;
+        height: 150px;
+        width: 80%;
         align-items: center;
-        justify-content: center;
-        gap: 10px;
+        justify-content: space-around ;
+        
+        
         
      
         
         
+    }
+    .formulario form #entrar-sso{
+        transform: translateX(0px);
+    
+    
+    }
+    .formulario form #link-final{
+        top: 605px;
+    }
+    .formulario form  #nome{
+        width: 20em;
     }
     
 }
