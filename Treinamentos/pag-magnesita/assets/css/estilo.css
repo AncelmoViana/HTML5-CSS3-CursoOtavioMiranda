@@ -138,10 +138,13 @@ input:focus{
     
 
 } 
+.formulario form .teste{
+    position: relative;
+}
 .label-nome-conta{
     position: absolute;
     left: 20px;
-    top: 50px;
+    top: 80px;
 }
 .formulario form  a{
     display: block;
