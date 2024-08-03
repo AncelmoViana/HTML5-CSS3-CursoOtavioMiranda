@@ -121,15 +121,21 @@ body{
 
 } 
 
-.formulario form input{
+.formulario form .teste{
+    width: 90%;
+    
+}
+
+.formulario form .teste input{
+ 
     border-radius: 3px;
     width: 100%;
     height: 42px;
     padding: 0px 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     border: 1px solid #CCCCCC;
     outline: none;
-    
+   
 }
 input:focus{
     outline-style: none;
@@ -151,28 +157,26 @@ input:focus{
     color: #3D5567;
     text-decoration: none;
     text-align: right;
-    margin-right: 25px;
+    
 }
 
  
-.formulario p .nome-conta , .formulario p .senha{
+.formulario form .teste .nome-conta , .formulario form .teste .senha{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     font-size: 0.79em;
-    border: 1px solid white;
     height: 15px;
-    width: 90px;
+    width: 100px;
     border-radius: 2.5px;
-    transform: translate(10px,48px);
+    transform: translate(10px, 38px);
     top: 200px;
-    
     z-index: 1;
     background-color: white;
+   
 
 }  
-.formulario form p .senha {
+.formulario form .teste .senha {
     width: 50px;
     
 } 
@@ -196,11 +200,11 @@ input:focus{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 100px;
-    width: 360px;
+    height: 90px;
+    width: 90%;
     align-items: center;
-    justify-content: flex-end;
-    background-color: lightblue;
+    justify-content: space-between;
+   
     
  
     
@@ -217,13 +221,16 @@ input:focus{
 
 }
 .formulario form #entrar-sso{
+    display: inline;
     font-family: roboto;
     font-weight: bold;
-    border: 2.5px solid var(--cor-principal);
+    border: 2.3px solid var(--cor-principal);
     padding: 13px 22px;
+   
+    min-width: 150px;
     border-radius: 12px;
     color: var(--cor-principal);
-    transform: translateX(5px);
+    
 
 
 }
@@ -239,7 +246,7 @@ input:focus{
     position: absolute;
     left: 50%;
     margin-left: -100px;
-    top: 570px;
+    top: 560px;
     
 
 }

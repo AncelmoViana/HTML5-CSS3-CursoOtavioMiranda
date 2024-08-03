@@ -1,4 +1,22 @@
 @charset "UTF-8";
+@media screen and (max-width: 453px) {
+    .formulario form #links{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around ;
+        
+        
+    }
+    .formulario form #link-final{
+        top: 605px;
+      
+    }
+    
+    
+}
 
 @media screen and (max-width: 600px) {
 
@@ -9,9 +27,8 @@
      
     .formulario form #links{
         display: flex;
-        flex-direction: column;
-        height: 150px;
-        width: 80%;
+   
+        width: 100%;
         align-items: center;
         justify-content: space-around ;
         
@@ -21,13 +38,7 @@
         
         
     }
-    .formulario form #entrar-sso{
-        transform: translateX(0px);
+ 
     
-    
-    }
-    .formulario form #link-final{
-        top: 605px;
-    }
     
 }
