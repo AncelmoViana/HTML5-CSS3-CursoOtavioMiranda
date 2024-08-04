@@ -244,16 +244,10 @@ input:focus{
 .formulario form #link-final{
     color: var(--cor-principal);
     text-decoration: underline;
-    text-align: center;
     font-size: 0.85em;
     font-weight: bold;
-    margin-top: 40px;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    top: 560px;
+   
     
-
 }
 
 
