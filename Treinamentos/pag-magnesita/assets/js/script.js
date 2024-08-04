@@ -18,6 +18,8 @@ let linkFinal = document.getElementById('link-final');
 let formulario = document.getElementById('formulario');
 
 
+
+
 function pt(){
     //comandos para mudar a cor dos botoes lang ativados
     btnEn.style.backgroundColor = "#ffffff";
@@ -44,6 +46,12 @@ function pt(){
 
    linkFinal.style.display = 'block';
    formulario.style.height = '630px';
+
+   //mudar placeholder
+   $(document).ready(function(){
+      $('input[name="nome"]').attr('placeholder', 'Nome da Conta' );
+      $('input[name="senha"]').attr('placeholder', 'Senha')
+   })
 
 
 }
@@ -79,6 +87,13 @@ function en(){
    formulario.style.height = '595px';
 
 
+   //mudar placeholder
+   $(document).ready(function(){
+      $('input[name="nome"]').attr('placeholder', 'Login' );
+      $('input[name="senha"]').attr('placeholder', 'Password')
+   })
+
+
 }
 
 function es(){
@@ -108,5 +123,12 @@ function es(){
 
    linkFinal.style.display = 'none';
    formulario.style.height = '595px';
+
+
+   //mudar placeholder
+   $(document).ready(function(){
+      $('input[name="nome"]').attr('placeholder', 'Usuario' );
+      $('input[name="senha"]').attr('placeholder', 'Contraseña')
+   })
 
 }

@@ -61,7 +61,7 @@ body{
    font-family: roboto;
    font-weight: normal;
    width: 400px;
-   min-width: 315px;
+   min-width: 320px;
    
    color: var(--cor-principal);
    height: 630px;
@@ -230,7 +230,7 @@ input:focus{
     font-family: roboto;
     font-weight: bold;
     border: 2.3px solid var(--cor-principal);
-    padding: 13px 22px;
+    padding: 13px 25px;
    
     min-width: 150px;
     border-radius: 12px;
