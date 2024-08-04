@@ -61,7 +61,7 @@ body{
    font-family: roboto;
    font-weight: normal;
    width: 400px;
-  
+   min-width: 315px;
    
    color: var(--cor-principal);
    height: 650px;
