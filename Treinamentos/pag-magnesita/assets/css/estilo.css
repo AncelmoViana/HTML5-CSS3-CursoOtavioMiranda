@@ -205,9 +205,10 @@ input:focus{
     flex-wrap: wrap;
     margin-top: 10px;
     height: 100px;
-    width: 90%;
+    width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
     
    
     
