@@ -64,7 +64,7 @@ body{
    min-width: 315px;
    
    color: var(--cor-principal);
-   height: 650px;
+   height: 630px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
    padding: 15px;
    background-color: white;
@@ -204,11 +204,11 @@ input:focus{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;
-    height: 120px;
+    height: 100px;
     width: 90%;
     align-items: center;
     justify-content: space-between;
-    background-color: lightblue;
+    
    
     
  

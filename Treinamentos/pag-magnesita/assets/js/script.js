@@ -43,7 +43,7 @@ function pt(){
    entrarSSO.innerHTML = 'ENTRAR COM SSO';
 
    linkFinal.style.display = 'block';
-   formulario.style.height = '675px';
+   formulario.style.height = '630px';
 
 
 }
@@ -76,7 +76,7 @@ function en(){
    entrarSSO.innerHTML = 'ENTER WITH SSO';
 
    linkFinal.style.display = 'none';
-   formulario.style.height = '655px';
+   formulario.style.height = '595px';
 
 
 }
@@ -107,6 +107,6 @@ function es(){
    entrarSSO.innerHTML = 'ENTRAR CON SSO';
 
    linkFinal.style.display = 'none';
-   formulario.style.height = '655px';
+   formulario.style.height = '595px';
 
 }
