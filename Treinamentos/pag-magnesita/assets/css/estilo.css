@@ -176,6 +176,7 @@ input:focus{
     z-index: 1;
     background-color: white;
    
+   
 
 }  
 .formulario form .teste .senha {
@@ -201,11 +202,13 @@ input:focus{
 .formulario form #links{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    height: 90px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    height: 120px;
     width: 90%;
     align-items: center;
     justify-content: space-between;
+    background-color: lightblue;
    
     
  

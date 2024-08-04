@@ -1,15 +1,6 @@
 @charset "UTF-8";
-@media screen and (max-width: 453px) {
-    .formulario form #links{
-        display: flex;
-        flex-direction: column;
-        height: 120px;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around ;
-        
-        
-    }
+@media screen and (max-width: 418px) {
+
     .formulario form #link-final{
         top: 605px;
       
