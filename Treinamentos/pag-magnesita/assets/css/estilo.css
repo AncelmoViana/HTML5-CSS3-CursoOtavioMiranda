@@ -271,14 +271,14 @@ input:focus{
 
 #alerta-esqueci-usuario div{
     font-size: 1em;
-    width: 340px;
+    width: 350px;
     height: 340px;
     background-color: #FFFFFF;
     padding: 30px;
     border-radius: 6px;
 }
 #alerta-esqueci-usuario div h1{
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding: 10px  0px;
     color: #0C2340;
 }
