@@ -158,6 +158,8 @@ input:focus{
     color: #3D5567;
     text-decoration: none;
     text-align: right;
+    cursor: pointer;
+    
     
 }
 
@@ -181,6 +183,7 @@ input:focus{
 }  
 .formulario form .teste .senha {
     width: 45px;
+    
     
 } 
 
@@ -251,8 +254,50 @@ input:focus{
     
 }
 
+#alerta-esqueci-usuario{
+    position: fixed;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6bdc542;
+    transition: top 0.3s;
+    
+}
 
-
+#alerta-esqueci-usuario div{
+    font-size: 1em;
+    width: 340px;
+    height: 340px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 6px;
+}
+#alerta-esqueci-usuario div h1{
+    font-size: 1.8em;
+    padding: 10px  0px;
+    color: #0C2340;
+}
+#alerta-esqueci-usuario div p{
+    margin-bottom: 40px;
+}
+#alerta-esqueci-usuario div a{
+    border: 1px solid #0C2340;
+    padding: 8px 70px;
+    color: #0C2340;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: border;
+    
+}
+#alerta-esqueci-usuario div a:hover{
+    background-color: #0C2340;
+    color: white;
+}
         
         
        

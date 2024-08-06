@@ -17,8 +17,20 @@ let linkFinal = document.getElementById('link-final');
 // variavel formulario
 let formulario = document.getElementById('formulario');
 
+//variavel do alerta esqueci a senha
+let AlertaEsqueciSenha = document.getElementById('alerta-esqueci-usuario');
 
 
+
+function alertaEsqueciUsuario(){
+   AlertaEsqueciSenha.style.top = '50%';
+   AlertaEsqueciSenha.style.display = 'flex'
+   
+}
+function botaoOK(){
+   AlertaEsqueciSenha.style.display = 'none'
+   
+ }
 
 function pt(){
     //comandos para mudar a cor dos botoes lang ativados

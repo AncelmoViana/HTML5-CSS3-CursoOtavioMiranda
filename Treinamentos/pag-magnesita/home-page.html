@@ -41,7 +41,10 @@
             <div class="teste">
                 <label for="nome" id="nome-conta" class="nome-conta" >Nome da Conta</label>
                 <input type="text" id="nome" class="nome" name="nome" placeholder="Nome da Conta">
-                <a href="#" id="esqueciUsuario">Esqueci meu usuário</a>
+
+                
+                <a   id="esqueciUsuario" onclick="alertaEsqueciUsuario()" >Esqueci meu usuário</a>
+                    
             
                 <label for="isenha" id="senha" class="senha" >Senha</label>
                 <input type="password" id="isenha" name="senha" placeholder="Senha">
@@ -61,23 +64,18 @@
             </p>
 
            
-               
-               
-            
-           
-   
-
-           
-            
-            
-            
-            
-            
-
-           
-          
         </form>
     </section>
+
+    <div id="alerta-esqueci-usuario">
+        <div>
+            <h1>Esqueci meu usuário</h1>
+            <p>
+                Seu usuário é o seu PeopleID (Chris ID) da empresa. Caso não saiba o ID,  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.
+            </p>
+            <a onclick="botaoOK()">Ok!</a>
+        </div>
+    </div>
   
        <!--
         <div class="logo-g"><img src="assets/imagens/logo-grande.png" alt="logo da magnesita"></div>
