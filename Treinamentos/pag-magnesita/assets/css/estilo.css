@@ -35,8 +35,8 @@ body{
 
 }
 .fundo .logo-pq{
-    
-   margin: 0px 3% 1% 0px;
+    margin: 0px 3% 1% 0px;
+
   
    
 }
@@ -292,6 +292,7 @@ input:focus{
     text-decoration: none;
     border-radius: 5px;
     font-weight: border;
+    cursor: pointer;
     
 }
 #alerta-esqueci-usuario div a:hover{
