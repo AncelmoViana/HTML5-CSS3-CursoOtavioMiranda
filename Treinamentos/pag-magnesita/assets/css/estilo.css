@@ -159,8 +159,9 @@ input:focus{
     text-decoration: none;
     text-align: right;
     cursor: pointer;
-    
-    
+}
+.formulario form a:active{
+    color: #3d556749;
 }
 
  
@@ -265,7 +266,7 @@ input:focus{
     align-items: center;
     justify-content: center;
     background-color: #b6bdc542;
-    transition: top 0.3s;
+   
     
 }
 
@@ -299,6 +300,7 @@ input:focus{
     background-color: #0C2340;
     color: white;
 }
+
         
         
        

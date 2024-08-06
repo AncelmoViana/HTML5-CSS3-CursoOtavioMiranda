@@ -20,15 +20,19 @@ let formulario = document.getElementById('formulario');
 //variavel do alerta esqueci a senha
 let AlertaEsqueciSenha = document.getElementById('alerta-esqueci-usuario');
 
+let alertaH1 = document.getElementById('alerta-h1');
+let alertaP = document.getElementById('alerta-p');
+
 
 
 function alertaEsqueciUsuario(){
    AlertaEsqueciSenha.style.top = '50%';
-   AlertaEsqueciSenha.style.display = 'flex'
+   AlertaEsqueciSenha.style.transition = ' top 0.3s';
    
 }
 function botaoOK(){
-   AlertaEsqueciSenha.style.display = 'none'
+   AlertaEsqueciSenha.style.top = '200%';
+   AlertaEsqueciSenha.style.transition = ' top 0s';
    
  }
 
@@ -64,6 +68,12 @@ function pt(){
       $('input[name="nome"]').attr('placeholder', 'Nome da Conta' );
       $('input[name="senha"]').attr('placeholder', 'Senha')
    })
+
+    //idioma do alerta esqueci usuario
+    alertaH1.innerHTML = 'Esqueci meu usuário';
+    alertaP.innerHTML ='Seu usuário é o seu PeopleID (Chris ID) da empresa. Caso não saiba o ID,  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.';
+
+
 
 
 }
@@ -106,6 +116,13 @@ function en(){
    })
 
 
+   //idioma do alerta esqueci usuario
+   alertaH1.innerHTML = 'Forgot my username';
+   alertaP.innerHTML ='Your password is your PeopleID (Chris ID), from RHI Magnesita. If you dont know this value, please contact Attract to Grow';
+
+   
+
+
 }
 
 function es(){
@@ -142,5 +159,9 @@ function es(){
       $('input[name="nome"]').attr('placeholder', 'Usuario' );
       $('input[name="senha"]').attr('placeholder', 'Contraseña')
    })
+
+   //idioma do alerta esqueci usuario
+   alertaH1.innerHTML = 'Olvidé mi usuario';
+   alertaP.innerHTML ='Tu usuario es tu ID personal (ID de CHRIS), de RHI Magnesita. Si lo desconoces, por favor contacta a Attract to Grow.';
 
 }
