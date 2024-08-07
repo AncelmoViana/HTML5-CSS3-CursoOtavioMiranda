@@ -1,4 +1,7 @@
+
+
 body{
+
  overflow-x: hidden;
  width: 100vw;
  height: 160vh;
@@ -266,6 +269,7 @@ input:focus{
     align-items: center;
     justify-content: center;
     background-color: #b6bdc542;
+    
    
     
 }

@@ -24,10 +24,23 @@ let alertaH1 = document.getElementById('alerta-h1');
 let alertaP = document.getElementById('alerta-p');
 
 
+document.addEventListener("mousedown", function(e){
+   
+   return false;
 
+
+
+})
+
+function AlertaesqueciSenha(){
+   alert('Esqueci Minha Senha  A senha padrão são seus 4 primeiros digitos do CPF. Clique em cancelar para tentar novamente, ou clique em OK para redefinir sua senha.')
+
+}
 function alertaEsqueciUsuario(){
    AlertaEsqueciSenha.style.top = '50%';
    AlertaEsqueciSenha.style.transition = ' top 0.3s';
+
+
    
 }
 function botaoOK(){
