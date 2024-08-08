@@ -17,29 +17,37 @@ let linkFinal = document.getElementById('link-final');
 // variavel formulario
 let formulario = document.getElementById('formulario');
 
-//variavel do alerta esqueci a senha
-let AlertaEsqueciSenha = document.getElementById('alerta-esqueci-usuario');
+//variavel do alerta esqueci usuario e senha
+let AlertaEsqueciUsuario = document.getElementById('alerta-esqueci-usuario');
 
 let alertaH1 = document.getElementById('alerta-h1');
 let alertaP = document.getElementById('alerta-p');
 
 
+let AlertaEsqueciSenha = document.getElementById('alerta-esqueci-senha');
+
+
+
 
 
 function AlertaesqueciSenha(){
-   alert('Esqueci Minha Senha  A senha padrão são seus 4 primeiros digitos do CPF. Clique em cancelar para tentar novamente, ou clique em OK para redefinir sua senha.')
+   AlertaEsqueciSenha.style.top = '50%';
+   
 
 }
+function cancelarAlerta(){
+   AlertaEsqueciSenha.style.top = '200%';
+}
 function alertaEsqueciUsuario(){
-   AlertaEsqueciSenha.style.top = '50%';
-   AlertaEsqueciSenha.style.transition = ' top 0.3s';
+   AlertaEsqueciUsuario.style.top = '50%';
+   AlertaEsqueciUsuario.style.transition = ' top 0.3s';
 
 
    
 }
 function botaoOK(){
-   AlertaEsqueciSenha.style.top = '200%';
-   AlertaEsqueciSenha.style.transition = ' top 0s';
+   AlertaEsqueciUsuario.style.top = '200%';
+   AlertaEsqueciUsuario.style.transition = ' top 0s';
    
  }
 

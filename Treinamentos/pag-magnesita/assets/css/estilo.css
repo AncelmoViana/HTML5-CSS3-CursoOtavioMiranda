@@ -306,6 +306,64 @@ input:focus{
     color: white;
 }
 
+#alerta-esqueci-senha{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+#modal-ES{
+    font-family: roboto;
+    background-color: white;
+    width: 450px;
+    padding: 15px;
+    height: 180px;
+    border: 1px solid gray;
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+#modal-ES p strong{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#botoes-modal{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 85px;
+    gap: 10px;
+}
+
+#botoes-modal .ok, .cancelar{
+    padding: 5px 25px;
+    background-color: #0077ff;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+   
+}
+#botoes-modal .cancelar{
+    background-color: rgb(228, 226, 226);
+    color: black;
+    padding: 5px 15px;
+    
+}
+#botoes-modal .ok:hover{
+    background-color: #0762ca;
+}
+#botoes-modal .cancelar:hover{
+    background-color: rgb(206, 204, 204);
+}
+
+
         
         
        

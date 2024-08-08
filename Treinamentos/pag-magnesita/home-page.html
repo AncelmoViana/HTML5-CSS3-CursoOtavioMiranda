@@ -48,7 +48,7 @@
             
                 <label for="isenha" id="senha" class="senha" >Senha</label>
                 <input type="password" id="isenha" name="senha" placeholder="Senha">
-                <a onclick="AlertaesqueciSenha()" id="esqueciSenha">Esqueci minha senha</a>
+                <a onclick="AlertaesqueciSenha()" id="esqueciSenha" >Esqueci minha senha</a>
             </div>
 
      
@@ -74,6 +74,21 @@
                 Seu usuário é o seu PeopleID (Chris ID) da empresa. Caso não saiba o ID,  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.
             </p>
             <a onclick="botaoOK()">Ok!</a>
+        </div>
+    </div>
+
+    <div id="alerta-esqueci-senha">
+        <div id="modal-ES">
+            <p id="modal-ES-p">
+                <strong>pag.apps.rhimagnesita.com diz</strong> <br><br>
+
+                Esqueci Minha Senha <br>
+                A senha padrão são seus 4 primeiros digitos do CPF. Clique em cancelar para tentar novamente, ou clique em OK para redefinir sua senha.
+            </p>
+            <div id="botoes-modal">
+                <a href="#" class="ok"><strong>OK</strong></a>
+                <a class="cancelar" onclick="cancelarAlerta()"><strong>Cancelar</strong></a>
+            </div>
         </div>
     </div>
   
