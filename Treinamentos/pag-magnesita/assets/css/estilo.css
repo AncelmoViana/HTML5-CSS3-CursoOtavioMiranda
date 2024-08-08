@@ -63,8 +63,9 @@ body{
    text-align: center;
    font-family: roboto;
    font-weight: normal;
-   width: 400px;
+   max-width: 400px;
    min-width: 320px;
+   width: 50%;
    
    color: var(--cor-principal);
    height: 630px;
