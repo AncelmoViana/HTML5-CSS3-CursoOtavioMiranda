@@ -25,18 +25,23 @@ let alertaP = document.getElementById('alerta-p');
 
 
 let AlertaEsqueciSenha = document.getElementById('alerta-esqueci-senha');
+let body = document.getElementById('body');
 
 
 
 
 
 function AlertaesqueciSenha(){
-   AlertaEsqueciSenha.style.top = '50%';
+  // AlertaEsqueciSenha.style.top = '50%';
+  // body.style.overflow = 'hidden';
+  alert('testando alerta');
+   
    
 
 }
 function cancelarAlerta(){
-   AlertaEsqueciSenha.style.top = '200%';
+   // AlertaEsqueciSenha.style.top = '200%';
+   //body.style.overflow = 'auto';
 }
 function alertaEsqueciUsuario(){
    AlertaEsqueciUsuario.style.top = '50%';
