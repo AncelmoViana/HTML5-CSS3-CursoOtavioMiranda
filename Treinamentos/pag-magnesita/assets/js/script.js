@@ -34,11 +34,23 @@ let body = document.getElementById('body');
 function AlertaesqueciSenha(){
   // AlertaEsqueciSenha.style.top = '50%';
   // body.style.overflow = 'hidden';
-  alert('testando alerta');
+  
    
-   
+ 
+   var r=confirm(" Esqueci Minha Senha \n A senha padrão são seus 4 primeiros digitos do CPF. Clique em cancelar para tentar novamente, ou clique em OK para redefinir sua senha.");
+   if (r==true)
+   {
+      window.location.href= "https://pt.stackoverflow.com/questions/457198/como-modificar-o-link-do-bot%C3%A3o-alert";
+   }
+   else
+   {
+     r="Você pressionou Cancelar!";
+   }
 
 }
+   
+
+
 function cancelarAlerta(){
    // AlertaEsqueciSenha.style.top = '200%';
    //body.style.overflow = 'auto';
