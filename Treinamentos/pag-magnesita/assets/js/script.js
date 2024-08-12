@@ -34,15 +34,14 @@ let contador = 0;
 
 
 function AlertaesqueciSenha(){
-  // AlertaEsqueciSenha.style.top = '50%';
-  // body.style.overflow = 'hidden';
+ 
   
    if (contador == 0){
       
       var r=confirm(" Esqueci Minha Senha \n A senha padrão são seus 4 primeiros digitos do CPF. Clique em cancelar para tentar novamente, ou clique em OK para redefinir sua senha.");
       if (r==true)
       {
-         window.location.href= "teste.html";
+         window.location.href= "resetarSenha.html";
       }
       else
       {
@@ -55,7 +54,7 @@ function AlertaesqueciSenha(){
       var r=confirm("Forgot my password \nthe default password are your 4 first digits of your CPF. Click in cancel to test again, or clink in OK to reset your password.");
       if (r==true)
       {
-         window.location.href= "teste.html";
+         window.location.href= "resetarSenha.html";
       }
       else
       {
@@ -67,7 +66,7 @@ function AlertaesqueciSenha(){
       var r=confirm("Olvidé mi contraseña\nLa contraseña por default son los 4 primeros digitos de tu CURP. Click en cancelar para probar  de nuevo, o click en OK para reiniciar tu contraseña. ");
       if (r==true)
       {
-         window.location.href= "https://pt.stackoverflow.com/questions/457198/como-modificar-o-link-do-bot%C3%A3o-alert";
+         window.location.href= "resetarSenha.html";
       }
       else
       {
