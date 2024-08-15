@@ -3,6 +3,9 @@
 :root{
     --cor-principal: #003262;
 }
+body{
+    height: 120vh;
+}
 
 header{
     display: flex;
@@ -74,9 +77,13 @@ form h1{
     color: #ECEEF0;
     font-size: 18px;
     padding: 12px;
-
+    font-weight: 500;
 
 }
+form p{
+    color: var(--cor-principal);
+}
+
 form .alerta-1{
     display: flex;
     align-items: center;

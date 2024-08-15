@@ -13,14 +13,14 @@ cpf.addEventListener('keypress', () => {
         cpf.value += '-';
     }
 })
-nascimento.addEventListener('keydown', () => {
+nascimento.addEventListener('onkeydown', () => {
     let nasclength = nascimento.value.length;
 
     if (nasclength === 2 || nasclength === 5){
         nascimento.value += '/';
     }
 })
-admissao.addEventListener('keydown', () => {
+admissao.addEventListener('onKeydown', () => {
     let admlength = admissao.value.length;
 
     if (admlength === 2 || admlength === 5){
