@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resetar Senha</title>
     <link rel="stylesheet" href="assets/css/estilo-resetar-senha.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/estilo-media-queries.css">
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +41,7 @@
     </header>
     <form action="#" method="post" target="_blank">
         <h1>RESET DE SENHA</h1>
-        <div class="formulario">
+        <div class="formulario2">
 
             <div class="alerta-1">
         
@@ -57,19 +59,21 @@
     
           
                 
-            <label for="PeopleID">PeopleID</label>
+            <label for="PeopleID" id="people-id-l">PeopleID</label>
 
             <input type="text" name="PeopleID" id="PeopleID" placeholder="999999">
     
     
-            <label for="cpf">CPF</label>
+            <label for="cpf" id="cpf-l">CPF</label>
             <input type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00">
     
-            <label for="nascimento">Data de Nascimento</label>
+            <label for="nascimento" id="nascimento-l">Data de Nascimento</label>
             <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="DD/MM/AAAA">
 
-            <label for="admissao">Data de Admissão</label>
+            <label for="admissao" id="admissao-l">Data de Admissão</label>
             <input type="text" name="admissao" id="admissao" maxlength="10" placeholder="DD/MM/AAAA">
+
+            <div><a href="#">Reset de Senha</a></div>
         </div>
 
     </form>
