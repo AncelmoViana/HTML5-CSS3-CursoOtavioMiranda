@@ -4,7 +4,8 @@
     --cor-principal: #003262;
 }
 body{
-    height: 120vh;
+    
+    
 }
 
 header{
@@ -13,6 +14,7 @@ header{
     justify-content: space-between;
     height: 110px;
     flex-wrap: wrap;
+    margin: 0 1.5% 0 1.5%;
 }
 
 header .lang{
@@ -66,13 +68,7 @@ header .languages{
     gap: 4px;
 }
 
-form{
 
-
-
-    
-    background-color: red;
-}
 
 
 
@@ -84,6 +80,7 @@ form h1{
     font-size: 18px;
     padding: 12px;
     font-weight: 500;
+ 
 
 }
 form p{
@@ -96,10 +93,12 @@ form .alerta-1{
     align-items: center;
     justify-content: flex-start;
     width: 90%;
-    padding-top: 40px;
-    height: 50px;
+    height: 30px;
     gap: 3%;
-    margin-left: 2%;
+    margin: 25px 0 0 2%;
+    font-size: 0.9em;
+    
+    
   
 
 }
@@ -138,32 +137,50 @@ form .alerta-1{
 form .formulario2{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: aqua;
+    align-items: flex-start;
+    
+    
 }
 
  form .formulario2 input{
  
     border-radius: 3px;
-    width: 95%;
+    width: 100%;
     height: 42px;
     padding: 0px 10px;
-    margin-top: 30px;
+    margin-top: 15px;
     border: 1px solid #CCCCCC;
     outline: none;
    
 }
+.inputs{
+    width: 100%;
+    max-width: 1000px;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.teste1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
 
 form .formulario2 label{
-    display: flex;
-   
+    text-align: center;
     font-family: roboto;
     font-size: 0.85em;
     height: 20px;
     border-radius: 2.5px;
     color: var(--cor-principal);
     background-color: white;
-    transform: translate(-400px, 40px);
+    transform: translate(10px, 27px);
+    
+   
+    
     
     
 }
@@ -175,6 +192,7 @@ form .formulario2 label{
 }
 #cpf-l{
     width: 38px;
+  
     
 
 }
@@ -188,11 +206,51 @@ form .formulario2 label{
    
 
 }
-.inputs{
-    width: 80%;
-    background-color: lightblue;
+#link-reset-senha{
+ 
+    background-color: var(--cor-principal);
+    padding: 15px 180px;
+    border-radius: 4px 0 0 0;
+    margin-top: 20px;
+    align-self: center;
+}
+#link-reset-senha a{
+    font-family: roboto;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+ 
+
+
+}
+#link-final-reset-senha{
+    margin-top: 25px;
+    font-family: roboto;
+    
+
+}
+#link-final-reset-senha a{
+    font-weight: bold;
+    color: var(--cor-principal);
+    text-decoration: none;
+    cursor: pointer;
+}
+#link-final-reset-senha a img{
+    width: 1.6em;
+
+    transform: rotate(0deg) translateY(8px);
+    background-color: white;
+   
   
 }
+#text-hide{
+    text-align: justify;
+    padding: 25px;
+    display: none;
+}
+
+
+
 
 
 
