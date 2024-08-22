@@ -27,6 +27,9 @@ let alertaP = document.getElementById('alerta-p');
 let AlertaEsqueciSenha = document.getElementById('alerta-esqueci-senha');
 let body = document.getElementById('body');
 
+let homePage = document.getElementById('pagina-home-page');
+let esqueciSenhaPage = document.getElementById('pagina-resetar-senha');
+
 let contador = 0;
 
 
@@ -41,7 +44,8 @@ function AlertaesqueciSenha(){
       var r=confirm(" Esqueci Minha Senha \n A senha padrão são seus 4 primeiros digitos do CPF. Clique em cancelar para tentar novamente, ou clique em OK para redefinir sua senha.");
       if (r==true)
       {
-         window.location.href= "resetarSenha.html";
+         homePage.style.display = 'none';
+         esqueciSenhaPage.style.display = 'block';
       }
       else
       {
@@ -54,7 +58,8 @@ function AlertaesqueciSenha(){
       var r=confirm("Forgot my password \nthe default password are your 4 first digits of your CPF. Click in cancel to test again, or clink in OK to reset your password.");
       if (r==true)
       {
-         window.location.href= "resetarSenha.html";
+         homePage.style.display = 'none';
+         esqueciSenhaPage.style.display = 'block';
       }
       else
       {
@@ -66,7 +71,8 @@ function AlertaesqueciSenha(){
       var r=confirm("Olvidé mi contraseña\nLa contraseña por default son los 4 primeros digitos de tu CURP. Click en cancelar para probar  de nuevo, o click en OK para reiniciar tu contraseña. ");
       if (r==true)
       {
-         window.location.href= "resetarSenha.html";
+         homePage.style.display = 'none';
+         esqueciSenhaPage.style.display = 'block';
       }
       else
       {
@@ -95,7 +101,10 @@ function botaoOK(){
    AlertaEsqueciUsuario.style.transition = ' top 0s';
    
  }
-
+function goToHomePage(){
+   homePage.style.display = 'block';
+   esqueciSenhaPage.style.display = 'none';
+}
 function pt(){
    contador = 0;
     //comandos para mudar a cor dos botoes lang ativados
