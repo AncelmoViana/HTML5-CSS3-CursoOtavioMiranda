@@ -3,6 +3,8 @@ let btnEn = document.getElementById('en');
 let btnPt = document.getElementById('pt');
 let btnEs = document.getElementById('es');
 
+
+
 //variaveis dos nomes dos inputs
 let nomeConta = document.getElementById('nome-conta');
 let senha = document.getElementById('senha');

@@ -39,6 +39,7 @@ header h1{
     background-color: aqua;
     
 }
+
 .logo-p-mag{
     width: 100px;
 
@@ -63,14 +64,6 @@ header .elementos-1{
    
 
 }
-header .languages{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-
-
 
 
 
