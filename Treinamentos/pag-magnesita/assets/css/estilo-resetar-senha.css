@@ -28,6 +28,17 @@ header .lang{
     height: 27px;
     cursor: pointer;
     border-radius: 3px;
+
+ 
+   
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
    
 }
 header h1{
@@ -42,12 +53,13 @@ header h1{
 
 .logo-p-mag{
     width: 100px;
+    background-color: aqua;
 
 }
 .icon-sair{
     width: 30px;
     height: 25px;
-    margin-top: 10px;
+    background-color: aqua;
     cursor: pointer;
     
     
@@ -55,12 +67,13 @@ header h1{
 
 header .elementos-1{
     width: 150px;
-    height: 90px;
+    height: 100px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     background-color: lightblue;
+    
    
 
 }
@@ -216,6 +229,7 @@ form .formulario2 label{
     font-weight: bold;
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
  
 
 

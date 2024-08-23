@@ -109,23 +109,17 @@ body{
    
 }
 .formulario #pt{
+     background-color: var(--cor-principal);
+    color: #ffffff;
+}
+#pt2{
     background-color: var(--cor-principal);
     color: #ffffff;
 }
 
-.languages{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    top: 50px;
-}
 
-.logo-p-mag{
-    display: flex;
-}
+
+
 .formulario h1{
     margin-top: 30px;
     font-size: 4em;

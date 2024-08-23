@@ -3,6 +3,11 @@ let btnEn = document.getElementById('en');
 let btnPt = document.getElementById('pt');
 let btnEs = document.getElementById('es');
 
+let btnEn2 = document.getElementById('en2');
+let btnPt2 = document.getElementById('pt2');
+let btnEs2 = document.getElementById('es2');
+
+
 
 
 //variaveis dos nomes dos inputs
@@ -107,6 +112,21 @@ function goToHomePage(){
    homePage.style.display = 'block';
    esqueciSenhaPage.style.display = 'none';
 }
+
+let h1Header = document.getElementById('h1-header');
+let pForm = document.getElementById('p-form');
+let labelPeopleId = document.getElementById('people-id-l');
+let labelCPF = document.getElementById('cpf-l')
+let labelNascimentData = document.getElementById('nascimento-l')
+let labelAdmissao = document.getElementById('admissao-l')
+let btnResetSenha = document.getElementById('link-reset-senha');
+let btnNaoSeiMeuID = document.getElementById('link-final-reset-senha');
+let txtHide = document.getElementById('text-hide');
+
+btnResetSenha.style.color = '#FFFFFF';
+btnResetSenha.style.fontWeight= 'bold';
+btnResetSenha.style.fontSize= '1.2em';
+
 function pt(){
    contador = 0;
     //comandos para mudar a cor dos botoes lang ativados
@@ -118,6 +138,15 @@ function pt(){
 
     btnEs.style.backgroundColor = "#ffffff";
     btnEs.style.color = "#003262";
+
+    btnEn2.style.backgroundColor = "#ffffff";
+    btnEn2.style.color = "#003262";
+ 
+    btnPt2.style.backgroundColor = "#003262";
+    btnPt2.style.color = "#ffffff";
+
+    btnEs2.style.backgroundColor = "#ffffff";
+    btnEs2.style.color = "#003262";
 
     //comandos para alterar o idioma dos texos do formulario.
    nomeConta.innerHTML = 'Nome da Conta';
@@ -148,6 +177,22 @@ function pt(){
 
 
 
+    //mudar idioma pagina resetar senha.
+    h1Header.innerHTML = 'RESET DE SENHA';
+    pForm.innerHTML = 'Para realizar o reset de senha preencha as informações abaixo';
+    labelPeopleId.innerHTML = 'PeopleID';
+    labelCPF.innerHTML = 'CPF';
+    labelNascimentData.innerHTML = 'Data de Nascimento';
+    labelAdmissao.innerHTML = 'Data de Admissão';
+    btnResetSenha.innerHTML = 'Reset de Senha';
+    btnNaoSeiMeuID.innerHTML = 'NÃO SEI MEU PEOPLEID'
+    textHide.innerHTML = 'Caso não saiba o valor do PeopleID (Chris ID),  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.'
+    
+
+
+
+
+
 }
 
 
@@ -158,12 +203,21 @@ function en(){
   //comandos para mudar a cor dos botoes lang ativados
    btnEn.style.backgroundColor = "#003262";
    btnEn.style.color = "#ffffff";
-
+   
    btnPt.style.backgroundColor = "#ffffff";
    btnPt.style.color = "#003262";
 
    btnEs.style.backgroundColor = "#ffffff";
    btnEs.style.color = "#003262";
+
+   btnEn2.style.backgroundColor = "#003262";
+   btnEn2.style.color = "#ffffff";
+   
+   btnPt2.style.backgroundColor = "#ffffff";
+   btnPt2.style.color = "#003262";
+
+   btnEs2.style.backgroundColor = "#ffffff";
+   btnEs2.style.color = "#003262";
 
    //comandos para alterar o idioma dos texos do formulario.
    nomeConta.innerHTML = 'Login';
@@ -209,6 +263,16 @@ function es(){
  
     btnEs.style.backgroundColor = "#003262";
     btnEs.style.color = "#ffffff";
+
+
+    btnEn2.style.backgroundColor = "#ffffff";
+    btnEn2.style.color = "#003262";
+
+    btnPt2.style.backgroundColor = "#ffffff";
+    btnPt2.style.color = "#003262";
+ 
+    btnEs2.style.backgroundColor = "#003262";
+    btnEs2.style.color = "#ffffff";
 
     
     //comandos para alterar o idioma dos texos do formulario.
