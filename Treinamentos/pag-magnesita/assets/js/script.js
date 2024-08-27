@@ -67,6 +67,8 @@ function AlertaesqueciSenha(){
       {
          homePage.style.display = 'none';
          esqueciSenhaPage.style.display = 'block';
+
+         
       }
       else
       {
@@ -186,7 +188,13 @@ function pt(){
     labelAdmissao.innerHTML = 'Data de Admissão';
     btnResetSenha.innerHTML = 'Reset de Senha';
     btnNaoSeiMeuID.innerHTML = 'NÃO SEI MEU PEOPLEID'
-    textHide.innerHTML = 'Caso não saiba o valor do PeopleID (Chris ID),  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.'
+    txtHide.innerHTML = 'Caso não saiba o valor do PeopleID (Chris ID),  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.'
+
+    
+   labelCPF.style.width = '38px';
+   labelNascimentData.style.width = '135px';
+   labelAdmissao.style.width = '125px';
+
     
 
 
@@ -246,6 +254,24 @@ function en(){
    //idioma do alerta esqueci usuario
    alertaH1.innerHTML = 'Forgot my username';
    alertaP.innerHTML ='Your password is your PeopleID (Chris ID), from RHI Magnesita. If you dont know this value, please contact Attract to Grow';
+
+
+    //mudar idioma pagina resetar senha.
+    h1Header.innerHTML = 'PASSWORD RESET';
+    pForm.innerHTML = 'To reset your password please fill the information bellow';
+    labelPeopleId.innerHTML = 'PeopleID';
+    labelCPF.innerHTML = 'Personal Document';
+    labelNascimentData.innerHTML = 'Birth date';
+    labelAdmissao.innerHTML = 'Admission Date';
+    btnResetSenha.innerHTML = 'Password Reset';
+    btnNaoSeiMeuID.innerHTML = 'DONT KNOW MY PEOPLEID'
+    txtHide.innerHTML = 'Please contact Atract to Grow..'
+
+    labelCPF.style.width = '128px';
+    labelNascimentData.style.width = '70px';
+    labelAdmissao.style.width = '110px';
+
+    
 
    
 

@@ -217,9 +217,12 @@ form .formulario2 label{
 
 }
 #link-reset-senha{
- 
+    text-align: center;
     background-color: var(--cor-principal);
-    padding: 15px 180px;
+    width: 50%;
+    min-width: 125px;
+    height: 45px;
+    padding-top: 10px;
     border-radius: 4px 0 0 0;
     margin-top: 20px;
     align-self: center;
