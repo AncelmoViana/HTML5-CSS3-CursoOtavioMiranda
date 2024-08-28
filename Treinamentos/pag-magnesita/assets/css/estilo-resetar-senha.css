@@ -227,6 +227,7 @@ form .formulario2 label{
     border-radius: 4px 0 0 0;
     margin-top: 20px;
     align-self: center;
+    cursor: pointer;
 }
 #link-reset-senha a{
     font-family: roboto;
@@ -241,6 +242,7 @@ form .formulario2 label{
 #link-final-reset-senha{
     margin-top: 25px;
     font-family: roboto;
+    cursor: pointer;
     
 
 }
@@ -252,7 +254,6 @@ form .formulario2 label{
 }
 #link-final-reset-senha a img{
     width: 1.6em;
-
     transform: rotate(0deg) translateY(8px);
     background-color: white;
    

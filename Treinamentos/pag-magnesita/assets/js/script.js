@@ -128,6 +128,17 @@ let txtHide = document.getElementById('text-hide');
 btnResetSenha.style.color = '#FFFFFF';
 btnResetSenha.style.fontWeight= 'bold';
 btnResetSenha.style.fontSize= '1.2em';
+btnNaoSeiMeuID.style.color = '#003262'
+btnNaoSeiMeuID.style.fontWeight = 'bold'
+
+
+let seta = document.getElementById("seta");
+let textHide = document.getElementById("text-hide");
+
+textHide.style.display = 'none';
+seta.style.transform = 'rotate(0deg) translateY(8px)'
+
+
 
 function pt(){
    contador = 0;
@@ -182,7 +193,6 @@ function pt(){
     //mudar idioma pagina resetar senha.
     h1Header.innerHTML = 'RESET DE SENHA';
     pForm.innerHTML = 'Para realizar o reset de senha preencha as informações abaixo';
-    labelPeopleId.innerHTML = 'PeopleID';
     labelCPF.innerHTML = 'CPF';
     labelNascimentData.innerHTML = 'Data de Nascimento';
     labelAdmissao.innerHTML = 'Data de Admissão';
@@ -195,13 +205,16 @@ function pt(){
    labelNascimentData.style.width = '135px';
    labelAdmissao.style.width = '125px';
 
+
+   
+}
     
 
 
 
 
 
-}
+
 
 
 
@@ -259,7 +272,6 @@ function en(){
     //mudar idioma pagina resetar senha.
     h1Header.innerHTML = 'PASSWORD RESET';
     pForm.innerHTML = 'To reset your password please fill the information bellow';
-    labelPeopleId.innerHTML = 'PeopleID';
     labelCPF.innerHTML = 'Personal Document';
     labelNascimentData.innerHTML = 'Birth date';
     labelAdmissao.innerHTML = 'Admission Date';
@@ -328,4 +340,38 @@ function es(){
    alertaH1.innerHTML = 'Olvidé mi usuario';
    alertaP.innerHTML ='Tu usuario es tu ID personal (ID de CHRIS), de RHI Magnesita. Si lo desconoces, por favor contacta a Attract to Grow.';
 
+   
+    //mudar idioma pagina resetar senha.
+    h1Header.innerHTML = 'REINICIAR CONTRASEÑA';
+    pForm.innerHTML = 'Para reiniciar tu contraseña por favor llevar la informacion solicitada abajo';
+    labelCPF.innerHTML = 'CURP';
+    labelNascimentData.innerHTML = 'Fecha de Nacimiento';
+    labelAdmissao.innerHTML = 'Fecha de Ingreso';
+    btnResetSenha.innerHTML = 'Reiniciar Contraseña';
+    btnNaoSeiMeuID.innerHTML = 'NO CONOZCO MI ID PERSONAL'
+    txtHide.innerHTML = 'Por favor contacte a ATG..'
+
+    labelCPF.style.width = '45px';
+    labelNascimentData.style.width = '140px';
+    labelAdmissao.style.width = '115px';
+
+
 }
+
+function mostrarAviso(){
+    //if(textHide.style.display == 'none'){
+       
+
+        if(textHide.style.display == 'none'){
+            textHide.style.display = 'block';
+            seta.style.transform = 'rotate(90deg) translateX(8px)';
+
+        }
+    
+        else{
+            textHide.style.display = 'none';
+             seta.style.transform = 'rotate(0deg) translateY(8px)'
+            
+        }
+    }
+
