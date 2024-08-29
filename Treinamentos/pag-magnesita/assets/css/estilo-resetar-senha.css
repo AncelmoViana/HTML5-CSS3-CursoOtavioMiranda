@@ -259,6 +259,7 @@ form .formulario2 label{
     height: 1.6em;
     transform: rotate(0deg) translateY(8px);
     margin-top: 15px;
+    cursor: pointer;
     
  
    
