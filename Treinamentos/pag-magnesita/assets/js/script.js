@@ -127,16 +127,17 @@ let txtHide = document.getElementById('text-hide');
 
 btnResetSenha.style.color = '#FFFFFF';
 btnResetSenha.style.fontWeight= 'bold';
-btnResetSenha.style.fontSize= '1.2em';
+btnResetSenha.style.fontFamily = 'roboto';
 btnNaoSeiMeuID.style.color = '#003262'
+btnResetSenha.style.fontSize= '0.85em';
 btnNaoSeiMeuID.style.fontWeight = 'bold'
 
 
 let seta = document.getElementById("seta");
 let textHide = document.getElementById("text-hide");
 
-textHide.style.display = 'none';
-seta.style.transform = 'rotate(0deg) translateY(8px)'
+
+
 
 
 
@@ -204,6 +205,8 @@ function pt(){
    labelCPF.style.width = '38px';
    labelNascimentData.style.width = '135px';
    labelAdmissao.style.width = '125px';
+  
+
 
 
    
@@ -357,6 +360,9 @@ function es(){
 
 
 }
+textHide.style.display = 'none';
+seta.style.transform = 'rotate(0deg) translateY(8px)'
+
 
 function mostrarAviso(){
     //if(textHide.style.display == 'none'){

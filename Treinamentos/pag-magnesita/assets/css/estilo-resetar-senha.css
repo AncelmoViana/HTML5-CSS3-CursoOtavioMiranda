@@ -14,9 +14,9 @@ header{
     justify-content: space-between;
     height: 110px;
     flex-wrap: wrap;
-    margin: 0 1.5% 0 1.5%;
+    margin: 0 2% 0 1%;
+   
 }
-
 header .lang{
     font-family: roboto;
     color: var(--cor-principal);
@@ -44,22 +44,18 @@ header .lang{
 header h1{
     font-family: roboto;
     font-size: 1.2em;
-  
     color: var(--cor-principal);
     font-weight: bold;
-    background-color: aqua;
     
 }
 
 .logo-p-mag{
     width: 100px;
-    background-color: aqua;
 
 }
 .icon-sair{
     width: 30px;
     height: 25px;
-    background-color: aqua;
     cursor: pointer;
     
     
@@ -72,7 +68,7 @@ header .elementos-1{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background-color: lightblue;
+   
     
    
 
@@ -217,13 +213,14 @@ form .formulario2 label{
 
 }
 #link-reset-senha{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--cor-principal);
     width: 100%;
     max-width: 480px;
     max-height: 45px;
     height: 45px;
-    padding-top: 10px;
     border-radius: 4px 0 0 0;
     margin-top: 20px;
     align-self: center;
@@ -234,13 +231,12 @@ form .formulario2 label{
     font-weight: bold;
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
  
 
-
+    
 }
 #link-final-reset-senha{
-    margin-top: 25px;
+    margin-top:25px ;
     font-family: roboto;
     cursor: pointer;
     
@@ -252,16 +248,27 @@ form .formulario2 label{
     text-decoration: none;
     cursor: pointer;
 }
-#link-final-reset-senha a img{
+#container-link-final{
+    display: flex;
+    height: 50px;
+    gap: 6px;
+    
+}
+#seta{
     width: 1.6em;
+    height: 1.6em;
     transform: rotate(0deg) translateY(8px);
-    background-color: white;
+    margin-top: 15px;
+    
+ 
    
   
 }
+
 #text-hide{
     padding: 30px;
     display: none;
+    color: #003262;
 }
 
 
