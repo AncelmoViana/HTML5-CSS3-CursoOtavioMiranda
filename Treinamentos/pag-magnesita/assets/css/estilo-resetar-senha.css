@@ -29,6 +29,7 @@ header .lang{
     cursor: pointer;
     border-radius: 3px;
 
+
  
    
 }
@@ -37,8 +38,9 @@ header .lang{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 4px;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    height: 100px;
    
 }
 header h1{
@@ -283,9 +285,10 @@ form .formulario2 label{
 
 @media screen and (max-width: 457px) {
     header{
-        height: 135px;
-        align-items: flex-start;
+        height: 140px;
+        align-items: center;
         justify-content: space-around;
+      
     }
     header .elementos-1{
         width: 100%;
@@ -296,9 +299,9 @@ form .formulario2 label{
     
   
 }
-@media screen and (max-width: 307px) {
+@media screen and (max-width: 275px) {
     header{
-        height: 180px;
+        height: 170px;
     }
     header .elementos-1{
         height: 86px;

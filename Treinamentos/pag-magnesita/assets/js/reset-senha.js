@@ -1,35 +1,16 @@
-let cpf = document.querySelector('#cpf');
+
 let nascimento = document.querySelector('#nascimento');
 let admissao = document.querySelector('#admissao');
+let cpf = document.getElementById("cpf");
 
-cpf.addEventListener('keypress', () => {
-    let cpflength = cpf.value.length;
-    
+function mascaraCPF() {
+    if(cpf.value.length == 3 || cpf.value.length == 7){
+        cpf.value += "."
 
-    if(cpflength === 3 || cpflength === 7){
-        cpf.value += '.';
     }
-    else if(cpflength == 11){
-        cpf.value += '-';
+    if(cpf.value.length == 11){
+        cpf.value += "-"
+
     }
-})
-nascimento.addEventListener('onkeydown', () => {
-    let nasclength = nascimento.value.length;
-
-    if (nasclength === 2 || nasclength === 5){
-        nascimento.value += '/';
-    }
-})
-admissao.addEventListener('onKeydown', () => {
-    let admlength = admissao.value.length;
-
-    if (admlength === 2 || admlength === 5){
-        admissao.value += '/';
-    }
-})
-
-
-    
-    
-
+}
 
