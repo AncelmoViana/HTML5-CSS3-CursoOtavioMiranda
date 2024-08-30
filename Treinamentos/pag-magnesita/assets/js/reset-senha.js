@@ -8,7 +8,7 @@ function mascaraCPF() {
         cpf.value += "."
 
     }
-    if(cpf.value.length == 11){
+    else if(cpf.value.length == 11){
         cpf.value += "-"
 
     }
