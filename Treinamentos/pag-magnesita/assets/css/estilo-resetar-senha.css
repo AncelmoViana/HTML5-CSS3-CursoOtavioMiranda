@@ -120,6 +120,22 @@ form .alerta-1{
 
     
 }
+.error{
+    position: absolute;
+    background-color: lightblue;
+    top: 335px;
+    left: 955px;
+    
+}
+.icon-error{
+    position:relative;
+    display: block;
+    width: 19px;
+    height: 21px;
+    background-color: red;
+    border-radius: 50%;
+
+}
 .traco-1{
     position: absolute;
     background-color: white;
@@ -214,6 +230,7 @@ form .formulario2 label{
    
 
 }
+
 #link-reset-senha{
     display: flex;
     align-items: center;

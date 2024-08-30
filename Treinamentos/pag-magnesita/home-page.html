@@ -60,7 +60,7 @@
     
     
                 <div id="links">
-                    <a href="#" id="entrar">ENTRAR</a>
+                    <a href="#" id="entrar" onclick="validacao()">ENTRAR</a>
                     <a href="https://login.microsoftonline.com/651b43ce-ccb8-4301-b551-b04dd872d401/oauth2/v2.0/authorize?client_id=88f666c6-99d8-43dd-bc5d-f9b1ef1bee31&scope=openid+email&response_type=code&redirect_uri=https%3a%2f%2fpag-backend.apps.rhimagnesita.com%2fauth%2flogin%2fmicrosoft%2fcallback&access_type=offline&code_challenge=8JOre7d3qI1nPBGyKQjdbX5QsgCsxF2oeqlWTsB49CY&code_challenge_method=S256&state=8JOre7d3qI1nPBGyKQjdbX5QsgCsxF2oeqlWTsB49CY&nonce=8JOre7d3qI1nPBGyKQjdbX5QsgCsxF2oeqlWTsB49CY&sso_nonce=AwABEgEAAAACAOz_BQD0_wt1gZ0KGjuS5pE06_JZcPHzkG17loQNvPGmjT5MfgexGWzxkP8IItI9xWlOwItsa4MKvcuNVtOG2vsFC-k-wwEgAA&client-request-id=0a07add8-df66-47b5-ba90-0e9ff1244ad8&mscrid=0a07add8-df66-47b5-ba90-0e9ff1244ad8" id="entrar-sso">ENTRAR COM SSO</a>
     
     
@@ -148,9 +148,18 @@
 
                             <label for="cpf" id="cpf-l">CPF</label>
                             <input type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeyup="mascaraCPF()">
+                                <div class="error">
+                                    <div class="icon-error">
+                                        <div class="traco-1"></div>
+                                        <div class="traco-2"></div>
+                                    </div>
+                                </div>
+                           
+                            
 
                             <label for="nascimento" id="nascimento-l">Data de Nascimento</label>
                             <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="DD/MM/AAAA">
+                           
 
                             <label for="admissao" id="admissao-l">Data de Admissão</label>
                             <input type="text" name="admissao" id="admissao" maxlength="10" placeholder="DD/MM/AAAA">
@@ -177,6 +186,11 @@
             </form>
         
     </div>
+
+<div id="carregando">
+    <div class="circulo"></div>
+
+</div>
 
 <script src="assets/js/reset-senha.js"></script>
     

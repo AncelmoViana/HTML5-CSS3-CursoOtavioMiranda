@@ -91,7 +91,8 @@ function AlertaesqueciSenha(){
    }
  
 }
-   
+
+
 
 
 function cancelarAlerta(){
@@ -110,6 +111,50 @@ function botaoOK(){
    AlertaEsqueciUsuario.style.transition = ' top 0s';
    
  }
+ //validaçao de login pagina inicial
+
+function validacao(){
+   let inputNome = document.getElementById('nome');
+   let inputSenha = document.getElementById('isenha');
+   let carregando = document.getElementById('carregando');
+
+ 
+   
+   if(inputNome.value === 'Usuario1' && inputSenha.value === '123456'){
+      
+   }
+   else{
+      carregando.style.display = 'flex';
+      homePage.style.display = 'none';
+
+      setTimeout(() => {
+      
+        
+      
+         carregando.style.display = 'none';
+         homePage.style.display = 'block';
+   
+        
+      }, 1000)
+      setTimeout(() => {
+      
+         AlertaEsqueciUsuario.style.top = '50%';
+         AlertaEsqueciUsuario.style.transition = ' top 0.3s';
+      
+   
+        
+      }, 1050)
+    
+         
+      
+
+    
+   }
+   
+
+   
+
+}
 function goToHomePage(){
    homePage.style.display = 'block';
    esqueciSenhaPage.style.display = 'none';

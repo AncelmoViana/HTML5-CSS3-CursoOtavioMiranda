@@ -29,6 +29,26 @@ body{
     display: none;
     
 }
+#carregando{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.circulo{
+    border: solid 7px #f3f3f3;
+    border-top: 7px solid #615f5f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: girar 0.7s linear infinite;
+}
+@keyframes girar{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
 .fundo{
     background-image: url('../imagens/fundo.jpeg');
     background-position: center center;
@@ -323,7 +343,6 @@ input:focus{
     background-color: #0C2340;
     color: white;
 }
-
 
 
 
