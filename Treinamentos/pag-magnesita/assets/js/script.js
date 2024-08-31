@@ -121,6 +121,29 @@ function validacao(){
  
    
    if(inputNome.value === 'Usuario1' && inputSenha.value === '123456'){
+      carregando.style.display = 'flex';
+      homePage.style.display = 'none';
+
+      setTimeout(() => {
+      
+        
+      
+         carregando.style.display = 'none';
+         homePage.style.display = 'block';
+   
+        
+      }, 1000)
+      setTimeout(() => {
+      
+         AlertaEsqueciUsuario.style.top = '50%';
+         AlertaEsqueciUsuario.style.transition = ' top 0.3s';
+      
+   
+        
+      }, 1050)
+      alertaH1.innerHTML = 'PeopleID';
+      alertaP.innerHTML ='Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000';
+
       
    }
    else{
