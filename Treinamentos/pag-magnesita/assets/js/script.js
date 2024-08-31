@@ -144,6 +144,22 @@ function validacao(){
    
         
       }, 1050)
+
+      if(contador == 0){
+         alertaH1.innerHTML = 'Erro de Login';
+         alertaP.innerHTML ='Não foi possível logar a conta. PeopleID, Matrícula e/ou senha inválidos.';
+
+      }
+      else if(contador == 1){
+         alertaH1.innerHTML = 'Login Error';
+         alertaP.innerHTML ='Could not log in to account. Invalid people ID or password ';
+
+      }
+      else{
+         alertaH1.innerHTML = 'Error de ingreso';
+         alertaP.innerHTML ='No se pudo iniciar sesión en la cuenta. El People ID o contraseña no son válidos';
+
+      }
     
          
       
