@@ -120,20 +120,57 @@ form .alerta-1{
 
     
 }
-.error{
-    position: absolute;
+.form-icones{
+    display: flex;
+    align-items: self-start;
     background-color: lightblue;
-    top: 335px;
-    left: 955px;
+    
+  
     
 }
+.correto{
+    position: relative;
+    margin: 25px 0 0 3px;
+
+}
+.icon-correto{
+   
+    width: 19px;
+    height: 21px;
+    background-color: #32CD32;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.parte1{
+    width: 9px;
+    height: 11px;
+    background-color: white;
+    transform: rotate(45deg);
+
+}
+.parte2{
+    width: 7px;
+    height: 9px;
+    background-color: #32CD32;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+
 .icon-error{
-    position:relative;
+    position: absolute;
     display: block;
     width: 19px;
     height: 21px;
     background-color: red;
     border-radius: 50%;
+    margin: 25px 0 0 3px;
 
 }
 .traco-1{
@@ -169,22 +206,24 @@ form .formulario2{
  form .formulario2 input{
  
     border-radius: 3px;
-    width: 100%;
+    width: 95%;
     height: 42px;
     padding: 0px 10px;
     margin-top: 15px;
     border: 1px solid #CCCCCC;
     outline: none;
    
+   
 }
 .inputs{
     width: 100%;
     max-width: 1000px;
- 
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
   
 }
 .teste1{
