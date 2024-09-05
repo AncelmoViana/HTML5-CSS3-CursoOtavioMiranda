@@ -129,30 +129,30 @@ form .alerta-1{
     
 }
 .correto-peopleID{
-    display: block;
+    display: none;
 
 } 
 .correto-cpf{
-    display: flex;
+    display: none;
 
 }
 .correto-nascimento{
-
+    display: none;
 }
 .correto-admissao{
-
+    display: none;
 }
 
 
 .error-cpf{
-    
+    display: none;  
 
 }
 .error-nascimento{
-
+    display: none;
 }
 .error-admissao{
-
+    display: none;
 }
 
 

@@ -160,8 +160,8 @@
 
                             <label for="cpf" id="cpf-l">CPF</label>
                             <div class="form-icones">
-                                <input type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeydown="mascaraCPF()">
-                                    <div class="error-cpf">
+                                <input type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeypress="mascaraCPF()">
+                                    <div class="error-cpf" id="error-cpf">
                                         <div class="icon-error">
                                             <div class="traco-3"></div>
                                             <div class="traco-4"></div>
@@ -251,5 +251,6 @@
 <script src="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js
 "></script>
+
 </body>
 </html>
