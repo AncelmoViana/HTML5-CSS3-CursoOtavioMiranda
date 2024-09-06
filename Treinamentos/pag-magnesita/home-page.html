@@ -146,9 +146,9 @@
                             
                             <label for="PeopleID" id="people-id-l">PeopleID</label>
                             <div class="form-icones">
-                                <input type="text" name="PeopleID" id="PeopleID" placeholder="999999">
-                                <div class="correto-peopleID">
-                                    <div class="icon-correto">
+                                <input type="text" name="PeopleID" id="PeopleID" placeholder="999999" onkeyup="validarpeopeID()">
+                                <div>
+                                    <div class="icon-correto  correto-peopleID" id="correto-peopleID">
                                         <div class="parte1"></div>
                                         <div class="parte2"></div>
                                     </div>
@@ -168,8 +168,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="correto-cpf">
-                                        <div class="icon-correto">
+                                    <div class="correto-cpf" >
+                                        <div class="icon-correto" id="correto-cpf">
                                             <div class="parte1"></div>
                                             <div class="parte2"></div>
                                         </div>
