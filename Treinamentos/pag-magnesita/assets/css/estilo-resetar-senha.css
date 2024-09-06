@@ -39,7 +39,7 @@ header .lang{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: lightblue;
+ 
     height: 100px;
    
 }
@@ -123,7 +123,7 @@ form .alerta-1{
 .form-icones{
     display: flex;
     align-items: self-start;
-    background-color: lightblue;
+ 
     width: 100%;
     
   
@@ -277,7 +277,7 @@ form .formulario2{
 .inputs{
     width: 100%;
     max-width: 1000px;
-    background-color: aqua;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
