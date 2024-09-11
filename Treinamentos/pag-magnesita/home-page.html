@@ -168,8 +168,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="correto-cpf" >
-                                        <div class="icon-correto" id="correto-cpf">
+                                    <div class="correto-cpf" id="correto-cpf">
+                                        <div class="icon-correto" >
                                             <div class="parte1"></div>
                                             <div class="parte2"></div>
                                         </div>
@@ -180,14 +180,14 @@
 
                             <label for="nascimento" id="nascimento-l">Data de Nascimento</label>
                             <div class="form-icones">
-                                <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="DD/MM/AAAA">
-                                <div class="error-nascimento">
+                                <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarData()">
+                                <div class="error-nascimento" id="error-nascimento">
                                     <div class="icon-error">
                                         <div class="traco-3"></div>
                                         <div class="traco-4"></div>
                                     </div>
                                 </div>
-                                <div class="correto-nascimento">
+                                <div class="correto-nascimento" id="correto-nascimento">
                                     <div class="icon-correto">
                                         <div class="parte1"></div>
                                         <div class="parte2"></div>
@@ -199,7 +199,7 @@
 
                             <label for="admissao" id="admissao-l">Data de Admissão</label>
                             <div class="form-icones">
-                                <input type="text" name="admissao" id="admissao" maxlength="10" placeholder="DD/MM/AAAA">
+                                <input type="text" name="admissao" id="admissao" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarDataAdmissao()">
                                 <div class="error-admissao">
                                     <div class="icon-error">
                                         <div class="traco-3"></div>
@@ -250,6 +250,8 @@
 <script src="assets/js/jquery.mask.min.js"></script>
 <script>
     $("#cpf").mask("000.000.000-00");
+    $("#nascimento").mask("99/99/9999");
+    $("#admissao").mask("99/99/9999");
 </script>
 
 <script src="

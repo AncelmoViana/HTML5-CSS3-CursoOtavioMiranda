@@ -25,17 +25,35 @@ function validarpeopeID(){
 }
 
 function validarCPF(){
+    
 
-  
-    if(cpf.value.trim() !== '' && cpf.value.length < 14){
-        iconErroCpf.style.display = 'flex';
-        iconCorretoCpf.style.display = 'none';
-    }
 
-    else{
-        iconErroCpf.style.display = 'none';
-        iconCorretoCpf.style.display = 'flex';
-    }
+   if(cpf.value.length !== 14 ){
+    iconErroCpf.style.display = 'flex';
+    iconCorretoCpf.style.display = 'none';
+   }
+   else if(cpf.value == ""){
+    iconErroCpf.style.display = 'none';
+    iconCorretoCpf.style.display = 'none';
+   }
+   
+  else{
+    iconErroCpf.style.display = 'none';
+    iconCorretoCpf.style.display = 'flex';
+  }
+ 
+}
+function validarData(){
+    if(nascimento.value.length  == '' || nascimento.value.length < 10){
+        iconErroNascimento.style.display = 'flex';
+        iconCorretoNascimento.style.display = 'none';
+        
+       }
+       
+      else{
+        iconCorretoNascimento.style.display = 'flex';
+        iconErroNascimento.style.display = 'none';
+      }
 
 }
 
