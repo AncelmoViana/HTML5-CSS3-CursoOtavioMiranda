@@ -15,6 +15,8 @@ let iconErroAdmissao = document.getElementById('error-admissao');
 
 
 
+
+
 function validarpeopeID(){
     if(peopleID.value.trim() !== '' ){
         iconCorretoPeopleid.style.display = 'flex';

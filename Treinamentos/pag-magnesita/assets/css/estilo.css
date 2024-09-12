@@ -22,9 +22,12 @@ body{
     box-sizing: border-box;
    
 }
+
 #pagina-home-page{
     display: block;
 }
+
+
 #pagina-resetar-senha{
     display: none;
     
@@ -128,14 +131,11 @@ body{
     border-radius: 3px;
    
 }
-.formulario #pt{
+ #pt2, #pt {
      background-color: var(--cor-principal);
     color: #ffffff;
 }
-#pt2{
-    background-color: var(--cor-principal);
-    color: #ffffff;
-}
+
 
 
 

@@ -308,24 +308,24 @@ form .formulario2 label{
     
     
 }
-#people-id-l{
+.people-id-l{
     width: 65px;
     
    
 
 }
-#cpf-l{
+.cpf-l{
     width: 38px;
   
     
 
 }
-#nascimento-l{
+.nascimento-l{
     width: 135px;
    
 
 }
-#admissao-l{
+.admissao-l{
     width: 125px;
    
 

@@ -10,6 +10,8 @@ let btnEs2 = document.getElementById('es2');
 
 
 
+
+
 //variaveis dos nomes dos inputs
 let nomeConta = document.getElementById('nome-conta');
 let senha = document.getElementById('senha');
@@ -111,6 +113,7 @@ function botaoOK(){
    AlertaEsqueciUsuario.style.transition = ' top 0s';
    
  }
+ 
  //validaçao de login pagina inicial
 
 function validacao(){
@@ -209,6 +212,30 @@ let btnResetSenha = document.getElementById('link-reset-senha');
 let btnNaoSeiMeuID = document.getElementById('link-final-reset-senha');
 let txtHide = document.getElementById('text-hide');
 
+let h1Headerpt = document.getElementById('h1-header-pt');
+let pFormpt = document.getElementById('p-form-pt');
+let labelPeopleIdpt = document.getElementById('people-id-l-pt');
+let labelCPFpt = document.getElementById('cpf-l-pt')
+let labelNascimentDatapt = document.getElementById('nascimento-l-pt')
+let labelAdmissaopt = document.getElementById('admissao-l-pt')
+let btnResetSenhapt = document.getElementById('link-reset-senha-pt');
+let btnNaoSeiMeuIDpt = document.getElementById('link-final-reset-senha-pt');
+let txtHidept = document.getElementById('text-hide-pt');
+
+let teste = 'testando tetstst'
+
+function btnConsultaExFunc(){
+   homePage.style.display = 'none';
+   esqueciSenhaPage.style.display = 'block';
+
+   h1Header.innerHTML = teste;
+
+   
+   
+   
+   
+ }
+
 btnResetSenha.style.color = '#FFFFFF';
 btnResetSenha.style.fontWeight= 'bold';
 btnResetSenha.style.fontFamily = 'roboto';
@@ -277,6 +304,7 @@ function pt(){
 
     //mudar idioma pagina resetar senha.
     h1Header.innerHTML = 'RESET DE SENHA';
+  
     pForm.innerHTML = 'Para realizar o reset de senha preencha as informações abaixo';
     labelCPF.innerHTML = 'CPF';
     labelNascimentData.innerHTML = 'Data de Nascimento';
@@ -358,6 +386,7 @@ function en(){
 
     //mudar idioma pagina resetar senha.
     h1Header.innerHTML = 'PASSWORD RESET';
+   
     pForm.innerHTML = 'To reset your password please fill the information bellow';
     labelCPF.innerHTML = 'Personal Document';
     labelNascimentData.innerHTML = 'Birth date';
@@ -428,8 +457,9 @@ function es(){
    alertaP.innerHTML ='Tu usuario es tu ID personal (ID de CHRIS), de RHI Magnesita. Si lo desconoces, por favor contacta a Attract to Grow.';
 
    
-    //mudar idioma pagina resetar senha.
+    //mudar idioma pagina resetar senha E ACESSO EX FUNCIONARIOS.
     h1Header.innerHTML = 'REINICIAR CONTRASEÑA';
+    h1Headerpt.innerHTML = 'ACESSO - EX FUNCIONÁRIO'
     pForm.innerHTML = 'Para reiniciar tu contraseña por favor llevar la informacion solicitada abajo';
     labelCPF.innerHTML = 'CURP';
     labelNascimentData.innerHTML = 'Fecha de Nacimiento';

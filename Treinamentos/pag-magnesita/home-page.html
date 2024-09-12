@@ -68,8 +68,8 @@
     
     
     
-                <p>
-                    <a href="#" id="link-final">
+                <p onclick="btnConsultaExFunc()">
+                    <a  id="link-final">
                     consultas para ex-funcionários
                     </a>
                 </p>
@@ -99,149 +99,154 @@
 
     <!-- Pagina Resetar Senha-->
 
-    <div id="pagina-resetar-senha">
-        
-            <header>
-            
-                
-                <div class="elementos-1">
-                    <div><img class="logo-p-mag" src="assets/imagens/logoMag.png" alt="logo da magnesita"></div>
-                    <div class="languages">
-                        <input type="button" value="pt" id="pt2" class="lang pt2" onclick="pt()">
-                        <input type="button" value="en" id="en2" class="lang en2" onclick="en()">
-                        <input type="button" value="es" id="es2" class="lang es2" onclick="es()">
-                    </div>
-                </div>
-            
-                <div>
-                    <h1>PAG - Portal Attract to Grow</h1>
-                </div>
-                <div onclick="goToHomePage()">
-                    <a><img src="assets/imagens/exit.png" alt="icon sair" class="icon-sair"></a>
-                </div>
-            
-            </header>
-            <form action="#" method="post" target="_blank">
-                <h1 id="h1-header">RESET DE SENHA</h1>
-                <div class="formulario2">
-            
-            
-            
-            
-            
-            
-                    <div class="inputs">
-                        <div class="alerta-1">
-            
-            
-                            <div>
-                                <div class="fundo-icon">
-                                    <div class="traco-1"></div>
-                                    <div class="traco-2"></div>
-                                </div>
-                            </div>
-                            <p id="p-form"> Para realizar o reset de senha preencha as informações abaixo</p>
-                        </div>
-                        <div class="teste1">
-                            
-                            <label for="PeopleID" id="people-id-l">PeopleID</label>
-                            <div class="form-icones">
-                                <input type="text" name="PeopleID" id="PeopleID" placeholder="999999" onkeyup="validarpeopeID()">
-                                <div>
-                                    <div class="icon-correto  correto-peopleID" id="correto-peopleID">
-                                        <div class="parte1"></div>
-                                        <div class="parte2"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            
-
-                            <label for="cpf" id="cpf-l">CPF</label>
-                            <div class="form-icones">
-                                <input type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeyup="validarCPF()">
-                                    <div class="error-cpf" id="error-cpf">
-                                        <div class="icon-error">
-                                            <div class="traco-3"></div>
-                                            <div class="traco-4"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="correto-cpf" id="correto-cpf">
-                                        <div class="icon-correto" >
-                                            <div class="parte1"></div>
-                                            <div class="parte2"></div>
-                                        </div>
-                                    </div>
-                            </div>
-                           
-                            
-
-                            <label for="nascimento" id="nascimento-l">Data de Nascimento</label>
-                            <div class="form-icones">
-                                <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarData()">
-                                <div class="error-nascimento" id="error-nascimento">
-                                    <div class="icon-error">
-                                        <div class="traco-3"></div>
-                                        <div class="traco-4"></div>
-                                    </div>
-                                </div>
-                                <div class="correto-nascimento" id="correto-nascimento">
-                                    <div class="icon-correto">
-                                        <div class="parte1"></div>
-                                        <div class="parte2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                           
-
-                            <label for="admissao" id="admissao-l">Data de Admissão</label>
-                            <div class="form-icones">
-                                <input type="text" name="admissao" id="admissao" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarDataAdmissao()">
-                                <div class="error-admissao" id="error-admissao">
-                                    <div class="icon-error">
-                                        <div class="traco-3"></div>
-                                        <div class="traco-4"></div>
-                                    </div>
-                                </div>
-                                <div class="correto-admissao" id="correto-admissao">
-                                    <div class="icon-correto">
-                                        <div class="parte1"></div>
-                                        <div class="parte2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            <div id="link-reset-senha"><a href="#" >Reset de Senha</a></div>
-
-
-                            
-                                <div id="container-link-final" onclick="mostrarAviso()">
-                                    <div id="link-final-reset-senha"><a>NÃO SEI MEU PEOPLEID  </a></div>
-                                    
-                                    
-                                    <img src="assets/imagens/seta-direita.png" alt="seta apontando para a direta" id="seta">
-                                   
-                                </div>
-                            
-                                <div id="text-hide"><p>Caso não saiba o valor do PeopleID (Chris ID),  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.</p></div>
-                            
-                        </div>
-            
-                    </div>
-            
-                </div>
-            </form>
-        
-    </div>
-
+   
 <div id="carregando">
     <div class="circulo"></div>
 
 </div>
+
+
+
+<div id="pagina-resetar-senha">
+        
+    <header>
+    
+        
+        <div class="elementos-1">
+            <div><img class="logo-p-mag" src="assets/imagens/logoMag.png" alt="logo da magnesita"></div>
+            <div class="languages">
+                <input type="button" value="pt" id="pt2" class="lang pt2" onclick="pt()">
+                <input type="button" value="en" id="en2" class="lang en2" onclick="en()">
+                <input type="button" value="es" id="es2" class="lang es2" onclick="es()">
+            </div>
+        </div>
+    
+        <div>
+            <h1>PAG - Portal Attract to Grow</h1>
+        </div>
+        <div onclick="goToHomePage()">
+            <a><img src="assets/imagens/exit.png" alt="icon sair" class="icon-sair"></a>
+        </div>
+    
+    </header>
+    <form action="#" method="post" target="_blank">
+        <h1 id="h1-header">RESET DE SENHA</h1>
+        <div class="formulario2">
+    
+    
+    
+    
+    
+    
+            <div class="inputs">
+                <div class="alerta-1">
+    
+    
+                    <div>
+                        <div class="fundo-icon">
+                            <div class="traco-1"></div>
+                            <div class="traco-2"></div>
+                        </div>
+                    </div>
+                    <p id="p-form"> Para realizar o reset de senha preencha as informações abaixo</p>
+                </div>
+                <div class="teste1">
+                    
+                    <label for="PeopleID" id="people-id-l" class="people-id-l">PeopleID</label>
+                    <div class="form-icones">
+                        <input type="text" name="PeopleID" id="PeopleID" placeholder="999999" onkeyup="validarpeopeID()">
+                        <div>
+                            <div class="icon-correto  correto-peopleID" id="correto-peopleID">
+                                <div class="parte1"></div>
+                                <div class="parte2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    <label for="cpf" id="cpf-l" class="cpf-l">CPF</label>
+                    <div class="form-icones">
+                        <input type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeyup="validarCPF()">
+                            <div class="error-cpf" id="error-cpf">
+                                <div class="icon-error">
+                                    <div class="traco-3"></div>
+                                    <div class="traco-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="correto-cpf" id="correto-cpf">
+                                <div class="icon-correto" >
+                                    <div class="parte1"></div>
+                                    <div class="parte2"></div>
+                                </div>
+                            </div>
+                    </div>
+                   
+                    
+
+                    <label for="nascimento" id="nascimento-l" class="nascimento-l">Data de Nascimento</label>
+                    <div class="form-icones">
+                        <input type="text" name="nascimento" id="nascimento" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarData()">
+                        <div class="error-nascimento" id="error-nascimento">
+                            <div class="icon-error">
+                                <div class="traco-3"></div>
+                                <div class="traco-4"></div>
+                            </div>
+                        </div>
+                        <div class="correto-nascimento" id="correto-nascimento">
+                            <div class="icon-correto">
+                                <div class="parte1"></div>
+                                <div class="parte2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+
+                    <label for="admissao" id="admissao-l" class="admissao-l">Data de Admissão</label>
+                    <div class="form-icones">
+                        <input type="text" name="admissao" id="admissao" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarDataAdmissao()">
+                        <div class="error-admissao" id="error-admissao">
+                            <div class="icon-error">
+                                <div class="traco-3"></div>
+                                <div class="traco-4"></div>
+                            </div>
+                        </div>
+                        <div class="correto-admissao" id="correto-admissao">
+                            <div class="icon-correto">
+                                <div class="parte1"></div>
+                                <div class="parte2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div id="link-reset-senha"><a href="#" >Reset de Senha</a></div>
+
+
+                    
+                        <div id="container-link-final" onclick="mostrarAviso()">
+                            <div id="link-final-reset-senha"><a>NÃO SEI MEU PEOPLEID  </a></div>
+                            
+                            
+                            <img src="assets/imagens/seta-direita.png" alt="seta apontando para a direta" id="seta">
+                           
+                        </div>
+                    
+                        <div id="text-hide"><p>Caso não saiba o valor do PeopleID (Chris ID),  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.</p></div>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+    </form>
+
+</div>
+
+
 
 <script src="assets/js/reset-senha.js"></script>
     
