@@ -32,19 +32,20 @@ function validarCPF(){
     iconErroCpf.style.display = 'flex';
     iconCorretoCpf.style.display = 'none';
    }
-   else if(cpf.value == ""){
+   else{
+    iconErroCpf.style.display = 'none';
+    iconCorretoCpf.style.display = 'flex';
+  }
+  if(cpf.value == ""){
     iconErroCpf.style.display = 'none';
     iconCorretoCpf.style.display = 'none';
    }
    
-  else{
-    iconErroCpf.style.display = 'none';
-    iconCorretoCpf.style.display = 'flex';
-  }
+  
  
 }
 function validarData(){
-    if(nascimento.value.length  == '' || nascimento.value.length < 10){
+    if(nascimento.value.length < 10){
         iconErroNascimento.style.display = 'flex';
         iconCorretoNascimento.style.display = 'none';
         
@@ -54,6 +55,28 @@ function validarData(){
         iconCorretoNascimento.style.display = 'flex';
         iconErroNascimento.style.display = 'none';
       }
+    if (nascimento.value  == "" ){
+        iconCorretoNascimento.style.display = 'none';
+        iconErroNascimento.style.display = 'none';
+    }
+
+}
+function validarDataAdmissao(){
+  if(admissao.value.length < 10){
+    iconErroAdmissao.style.display = 'flex';
+    iconCorretoAdmissao.style.display = 'none';
+    
+   }
+   
+  else{
+    iconCorretoAdmissao.style.display = 'flex';
+    iconErroAdmissao.style.display = 'none';
+  }
+  if (admissao.value  == "" ){
+
+    iconCorretoAdmissao.style.display = 'none';
+    iconErroAdmissao.style.display = 'none';
+  }
 
 }
 
