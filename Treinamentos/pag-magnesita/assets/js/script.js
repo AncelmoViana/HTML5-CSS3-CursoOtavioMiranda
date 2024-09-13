@@ -212,29 +212,19 @@ let btnResetSenha = document.getElementById('link-reset-senha');
 let btnNaoSeiMeuID = document.getElementById('link-final-reset-senha');
 let txtHide = document.getElementById('text-hide');
 
-let h1Headerpt = document.getElementById('h1-header-pt');
-let pFormpt = document.getElementById('p-form-pt');
-let labelPeopleIdpt = document.getElementById('people-id-l-pt');
-let labelCPFpt = document.getElementById('cpf-l-pt')
-let labelNascimentDatapt = document.getElementById('nascimento-l-pt')
-let labelAdmissaopt = document.getElementById('admissao-l-pt')
-let btnResetSenhapt = document.getElementById('link-reset-senha-pt');
-let btnNaoSeiMeuIDpt = document.getElementById('link-final-reset-senha-pt');
-let txtHidept = document.getElementById('text-hide-pt');
 
-let teste = 'testando tetstst'
+
 
 function btnConsultaExFunc(){
    homePage.style.display = 'none';
    esqueciSenhaPage.style.display = 'block';
+   
+   h1Header.innerHTML = 'kdkdk'
 
-   h1Header.innerHTML = teste;
-
-   
-   
-   
-   
- }
+   function pt(){
+      h1Header.innerText = 'hhshsh';
+   }
+}
 
 btnResetSenha.style.color = '#FFFFFF';
 btnResetSenha.style.fontWeight= 'bold';
@@ -459,7 +449,7 @@ function es(){
    
     //mudar idioma pagina resetar senha E ACESSO EX FUNCIONARIOS.
     h1Header.innerHTML = 'REINICIAR CONTRASEÑA';
-    h1Headerpt.innerHTML = 'ACESSO - EX FUNCIONÁRIO'
+   
     pForm.innerHTML = 'Para reiniciar tu contraseña por favor llevar la informacion solicitada abajo';
     labelCPF.innerHTML = 'CURP';
     labelNascimentData.innerHTML = 'Fecha de Nacimiento';
