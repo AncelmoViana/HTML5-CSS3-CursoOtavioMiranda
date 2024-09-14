@@ -1,7 +1,13 @@
 //variaveis dos botoes
 let btnEn = document.getElementById('en');
-let btnPt = document.getElementById('pt');
+//let btnPt = document.getElementById('pt');
 let btnEs = document.getElementById('es');
+let btnPt = document.querySelectorAll(".ptBR");
+
+
+
+
+
 
 let btnEn2 = document.getElementById('en2');
 let btnPt2 = document.getElementById('pt2');
@@ -250,6 +256,8 @@ function pt(){
  
     btnPt.style.backgroundColor = "#003262";
     btnPt.style.color = "#ffffff";
+    
+    
 
     btnEs.style.backgroundColor = "#ffffff";
     btnEs.style.color = "#003262";
@@ -333,6 +341,7 @@ function en(){
    btnPt.style.backgroundColor = "#ffffff";
    btnPt.style.color = "#003262";
 
+   
    btnEs.style.backgroundColor = "#ffffff";
    btnEs.style.color = "#003262";
 
