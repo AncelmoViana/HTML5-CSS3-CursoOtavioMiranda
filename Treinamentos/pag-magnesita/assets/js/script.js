@@ -1,8 +1,8 @@
 //variaveis dos botoes
 let btnEn = document.getElementById('en');
-//let btnPt = document.getElementById('pt');
+let btnPt = document.getElementById('pt');
 let btnEs = document.getElementById('es');
-let btnPt = document.querySelectorAll(".ptBR");
+
 
 
 
