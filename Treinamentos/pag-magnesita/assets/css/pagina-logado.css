@@ -3,6 +3,10 @@
 #pagina-logado{
     display: block;
 }
+.header-logado{
+    height: 108px;
+    
+}
 .fundo-2{
     background-image: url('../imagens/fundo.jpeg');
     background-position: center center;
@@ -18,4 +22,7 @@
 
 
 
+}
+.logo-pq-logado{
+    margin: 0 28px 12px 0;
 }
