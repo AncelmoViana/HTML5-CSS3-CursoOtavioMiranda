@@ -19,7 +19,7 @@
     " rel="stylesheet">
 </head>
 <body>
-<div id="pagina-home-page">
+  <div id="pagina-home-page">
     
     
             <div class="fundo">
@@ -88,7 +88,7 @@
                 <a onclick="botaoOK()">Ok!</a>
             </div>
         </div>
-</div>
+  </div>
 
 
 
@@ -101,14 +101,14 @@
     <!-- Pagina Resetar Senha-->
 
    
-<div id="carregando">
+  <div id="carregando">
     <div class="circulo"></div>
 
-</div>
+  </div>
 
 
 
-<div id="pagina-resetar-senha">
+  <div id="pagina-resetar-senha">
         
     <header>
     
@@ -245,31 +245,32 @@
         </div>
     </form>
 
-</div>
+  </div>
 
 
-<div id="pagina-logado"></div>
+    <div id="pagina-logado">
         
-    <header class="header-logado">
+        <header class="header-logado">
     
         
-        <div class="elementos-1 elemento-logado">
-            <div><img class="logo-p-mag" src="assets/imagens/logoMag.png" alt="logo da magnesita"></div>
-            <div class="languages">
-                <input type="button" value="pt" id="pt3" class="lang pt" onclick="pt()">
-                <input type="button" value="en" id="en3" class="lang en" onclick="en()">
-                <input type="button" value="es" id="es3" class="lang es" onclick="es()">
+            <div class="elementos-1 elemento-logado">
+                <div><img class="logo-p-mag" src="assets/imagens/logoMag.png" alt="logo da magnesita"></div>
+                <div class="languages">
+                    <input type="button" value="pt" id="pt3" class="lang pt" onclick="pt()">
+                    <input type="button" value="en" id="en3" class="lang en" onclick="en()">
+                    <input type="button" value="es" id="es3" class="lang es" onclick="es()">
+                </div>
             </div>
-        </div>
     
-        <div>
-            <h1>PAG - Portal Attract to Grow</h1>
-        </div>
-        <div onclick="goToHomePage()">
-            <a><img src="assets/imagens/exit.png" alt="icon sair" class="icon-sair"></a>
-        </div>
+            <div>
+                <h1>PAG - Portal Attract to Grow</h1>
+            </div>
+            <div onclick="goToHomePage()">
+                <a><img src="assets/imagens/exit.png" alt="icon sair" class="icon-sair"></a>
+            </div>
+        </header>
     
-    </header>
+        
     
         <h1 class="h1-header">HOME</h1>
         <div class="fundo-2">
@@ -278,28 +279,49 @@
                 <p class="p2 p2-fundo">PORTAL</p>
                 <p class="p3 p3-fundo">ATTRACT TO GROW</p>
             </div>
-            
+
             <img src="assets/imagens/logo.png" alt="logo da magnesita" class="logo-pq logo-pq-logado">
+        </div>
+       
 
            
+        
+        
+        <div class="container">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
         </div>
 
+    </div>   
+ 
 
 
-<script src="assets/js/reset-senha.js"></script>
+
+
+    <script src="assets/js/reset-senha.js"></script>
     
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/jquery.mask.min.js"></script>
-<script>
-    $("#cpf").mask("000.000.000-00");
-    $("#nascimento").mask("99/99/9999");
-    $("#admissao").mask("99/99/9999");
-</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script>
+        $("#cpf").mask("000.000.000-00");
+        $("#nascimento").mask("99/99/9999");
+        $("#admissao").mask("99/99/9999");
+    </script>
 
-<script src="
-https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js
-"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js
+    "></script>
 
 </body>
 </html>

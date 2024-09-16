@@ -5,6 +5,7 @@
 }
 .header-logado{
     height: 108px;
+
     
 }
 .fundo-2{
@@ -39,6 +40,7 @@
     height: 180px;
     width: 230px;
     margin: 0 0 0 28px;
+   
   
    
     
@@ -56,11 +58,33 @@
 .p3-fundo{
     padding: -20px;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: lightblue;
+    height: 100vh;
+   
+
+}
+.container div{
+    width: 270px;
+    max-width: 270px;
+    min-width: 270px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    background-color: aqua;
+    
+}
+
 
 @media( max-width: 457px){
-    .elemento-1{
-        height: 500px;
-        background-color: aqua;
+    .header-logado{
+        height: 140px;
+        
     }
     
 }
