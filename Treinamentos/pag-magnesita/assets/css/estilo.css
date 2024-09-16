@@ -140,15 +140,16 @@ body{
 
 
 
-.formulario h1{
+.p1{
     margin-top: 30px;
     font-size: 4em;
     font-weight: lighter;
+    
 
    
   
 }
-.formulario h2{
+.p2{
     font-size: 1.8em;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -156,10 +157,12 @@ body{
     
   
 }
-.formulario h3{
+.p3{
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px 0 10px 0;
     font-weight: lighter;
+ 
+   
 
 } 
 
