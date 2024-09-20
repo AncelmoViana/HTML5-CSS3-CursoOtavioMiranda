@@ -1,4 +1,10 @@
 @charset "UTF-8";
+:root{
+    --cor-principal: #003262;
+}
+*{
+    font-family: roboto;
+}
 
 #pagina-logado{
     display: block;
@@ -14,7 +20,6 @@
     background-size: cover;
     height: 200px;
     width: 100vw;
-    margin-bottom: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,21 +67,35 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    background-color: lightblue;
-    height: 100vh;
-   
+    gap: 22px;
+    padding: 40px 0 70px 20px;
+    color: var(--cor-principal);
+       
 
 }
 .container div{
+    display: flex;
     width: 270px;
     max-width: 270px;
     min-width: 270px;
     height: 100px;
     max-height: 100px;
     min-height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.273);
+    border-radius: 5px;
+    font-size: 0.8em;
+    
+  
+    
+   
+    
+}
+.container div img{
+   
     background-color: aqua;
+    width: 50px;
     
 }
 
