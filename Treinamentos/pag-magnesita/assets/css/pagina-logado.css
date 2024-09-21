@@ -7,7 +7,7 @@
 }
 
 #pagina-logado{
-    display: block;
+    display: none;
 }
 .header-logado{
     height: 108px;
@@ -73,7 +73,7 @@
        
 
 }
-.container div{
+.container a{
     display: flex;
     width: 270px;
     max-width: 270px;
@@ -82,21 +82,25 @@
     max-height: 100px;
     min-height: 100px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     box-shadow:  0 0 10px rgba(0, 0, 0, 0.273);
     border-radius: 5px;
     font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor-principal);
     
   
     
    
     
 }
-.container div img{
-   
-    background-color: aqua;
-    width: 50px;
-    
+.container a img{
+    width: 45px;
+    margin: 0 25% 0 10px;    
+}
+.container .editar{
+    margin: 0 20% 0 10px;    
 }
 
 

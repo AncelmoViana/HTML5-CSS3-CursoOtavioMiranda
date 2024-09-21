@@ -121,11 +121,13 @@ function botaoOK(){
  }
  
  //validaçao de login pagina inicial
+ let paginaLogado = document.getElementById('pagina-logado');
 
 function validacao(){
    let inputNome = document.getElementById('nome');
    let inputSenha = document.getElementById('isenha');
    let carregando = document.getElementById('carregando');
+   
 
  
    
@@ -138,7 +140,9 @@ function validacao(){
         
       
          carregando.style.display = 'none';
-         homePage.style.display = 'block';
+
+         
+       
    
         
       }, 1000)
@@ -146,12 +150,15 @@ function validacao(){
       
          AlertaEsqueciUsuario.style.top = '50%';
          AlertaEsqueciUsuario.style.transition = ' top 0.3s';
+
       
    
         
       }, 1050)
       alertaH1.innerHTML = 'PeopleID';
       alertaP.innerHTML ='Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000';
+
+      paginaLogado.style.display = 'block';
 
       
    }
@@ -206,6 +213,7 @@ function validacao(){
 function goToHomePage(){
    homePage.style.display = 'block';
    esqueciSenhaPage.style.display = 'none';
+   paginaLogado.style.display = 'none';
 }
 
 let h1Header = document.getElementById('h1-header');
