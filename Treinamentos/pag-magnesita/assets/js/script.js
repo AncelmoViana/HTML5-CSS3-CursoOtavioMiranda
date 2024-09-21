@@ -145,20 +145,23 @@ function validacao(){
        
    
         
-      }, 1000)
-      setTimeout(() => {
-      
+      }, 2000)
+  
          AlertaEsqueciUsuario.style.top = '50%';
          AlertaEsqueciUsuario.style.transition = ' top 0.3s';
+      
+         
+         alertaH1.innerHTML = 'PeopleID';
+         alertaP.innerHTML ='Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000';
 
+         paginaLogado.style.display = 'block';
       
    
         
-      }, 1050)
-      alertaH1.innerHTML = 'PeopleID';
-      alertaP.innerHTML ='Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000';
 
-      paginaLogado.style.display = 'block';
+     
+
+     
 
       
    }
