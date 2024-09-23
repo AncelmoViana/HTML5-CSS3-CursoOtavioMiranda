@@ -5,13 +5,13 @@ let btnEs = document.getElementById('es');
 
 
 
-
-
-
-
 let btnEn2 = document.getElementById('en2');
 let btnPt2 = document.getElementById('pt2');
 let btnEs2 = document.getElementById('es2');
+
+let btnEn3 = document.getElementById('en3');
+let btnPt3 = document.getElementById('pt3');
+let btnEs3 = document.getElementById('es3');
 
 
 
@@ -101,8 +101,6 @@ function AlertaesqueciSenha(){
 }
 
 
-
-
 function cancelarAlerta(){
    // AlertaEsqueciSenha.style.top = '200%';
    //body.style.overflow = 'auto';
@@ -111,17 +109,64 @@ function alertaEsqueciUsuario(){
    AlertaEsqueciUsuario.style.top = '50%';
    AlertaEsqueciUsuario.style.transition = ' top 0.3s';
 
+  
+   
+
 
    
 }
+
 function botaoOK(){
    AlertaEsqueciUsuario.style.top = '200%';
    AlertaEsqueciUsuario.style.transition = ' top 0s';
+
    
- }
+}
+verificador1 = 0;
+verificador2 = 0;
+
+function botaoOKalertaLogin(){
+   alertaLogin.style.top = '200%';
+   alertaLogin.style.transition = ' top 0s';
+   verificador1 = 1;
+
+   if(verificador1 ==1 && verificador2 ==1){
+
+      carregando.style.display = 'flex';
+      homePage.style.display = 'none';
+   
+
+      setTimeout(() => {
+
+         
+   
+     
+   
+         carregando.style.display = 'none';
+         paginaLogado.style.display = 'block';
+   
+         
+       
+   
+        
+      }, 2000)
+
+   }
+   
+  
+
+  
+
+}
+
+
  
  //validaçao de login pagina inicial
  let paginaLogado = document.getElementById('pagina-logado');
+
+ let alertaLogin = document.getElementById('alerta-login');
+ let alertaLoginH1  = document.getElementById('alerta-login-h1');
+ let alertaLonginP = document.getElementById('alerta-login-p');
 
 function validacao(){
    let inputNome = document.getElementById('nome');
@@ -134,40 +179,44 @@ function validacao(){
    if(inputNome.value === 'Usuario1' && inputSenha.value === '123456'){
       carregando.style.display = 'flex';
       homePage.style.display = 'none';
+      verificador2 = 1;
+
+   
 
       setTimeout(() => {
       
         
       
          carregando.style.display = 'none';
+         homePage.style.display = 'block';
 
          
        
    
         
       }, 2000)
-  
-         AlertaEsqueciUsuario.style.top = '50%';
-         AlertaEsqueciUsuario.style.transition = ' top 0.3s';
       
+      if(verificador2 == 1){
+         setTimeout(() => {
+            alertaLogin.style.top = '50%';
+            alertaLogin.style.transition = ' top 0.3s';
          
-         alertaH1.innerHTML = 'PeopleID';
-         alertaP.innerHTML ='Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000';
-
-         paginaLogado.style.display = 'block';
-      
+            
+            alertaLoginH1.innerHTML = 'PeopleID';
+            alertaLonginP.innerHTML ='Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000';
    
-        
+         }, 2000)
+      }
 
      
-
-     
-
-      
+  
+       
    }
+
    else{
       carregando.style.display = 'flex';
       homePage.style.display = 'none';
+      verificador2 = 3;
 
       setTimeout(() => {
       
@@ -180,43 +229,47 @@ function validacao(){
       }, 1000)
       setTimeout(() => {
       
-         AlertaEsqueciUsuario.style.top = '50%';
-         AlertaEsqueciUsuario.style.transition = ' top 0.3s';
-      
+         alertaLogin.style.top = '50%';
+         alertaLogin.style.transition = ' top 0.3s';
+
    
         
       }, 1050)
 
-      if(contador == 0){
-         alertaH1.innerHTML = 'Erro de Login';
-         alertaP.innerHTML ='Não foi possível logar a conta. PeopleID, Matrícula e/ou senha inválidos.';
+      if(contador == 0 && verificador2 === 3){
+         alertaLoginH1.innerHTML = 'Erro de Login';
+         alertaLonginP.innerHTML ='Não foi possível logar a conta. PeopleID, Matrícula e/ou senha inválidos.';
+         console.log(verificador2);
 
       }
-      else if(contador == 1){
-         alertaH1.innerHTML = 'Login Error';
-         alertaP.innerHTML ='Could not log in to account. Invalid people ID or password ';
+      if(contador == 1 && verificador2 === 3){
+         alertaLoginH1.innerHTML = 'Login Error';
+         alertaLonginP.innerHTML ='Could not log in to account. Invalid people ID or password ';
 
       }
-      else{
-         alertaH1.innerHTML = 'Error de ingreso';
-         alertaP.innerHTML ='No se pudo iniciar sesión en la cuenta. El People ID o contraseña no son válidos';
+      if (contador == 2 && verificador2 === 3){
+         alertaLoginH1 = 'Error de ingreso';
+         alertaLonginP.innerHTML ='No se pudo iniciar sesión en la cuenta. El People ID o contraseña no son válidos';
 
       }
-    
-         
-      
+   } 
 
-    
-   }
-   
 
-   
 
 }
+function submit(event){
+   if(event.key === 'Enter'){
+      event.proventDefault();
+      document.getElementById('entrar').click();
+   }
+}
+   
 function goToHomePage(){
    homePage.style.display = 'block';
    esqueciSenhaPage.style.display = 'none';
    paginaLogado.style.display = 'none';
+   verificador1 = 0;
+   verificador2 = 0;
 }
 
 let h1Header = document.getElementById('h1-header');
@@ -279,8 +332,21 @@ function pt(){
     btnPt2.style.backgroundColor = "#003262";
     btnPt2.style.color = "#ffffff";
 
+  
     btnEs2.style.backgroundColor = "#ffffff";
     btnEs2.style.color = "#003262";
+
+    btnPt3.style.backgroundColor = "#003262";
+    btnPt3.style.color = "#ffffff";
+
+    btnEn3.style.backgroundColor = "#ffffff";
+    btnEn3.style.color = "#003262";
+
+    btnEs3.style.backgroundColor = "#ffffff";
+    btnEs3.style.color = "#003262";
+
+
+    
 
     //comandos para alterar o idioma dos texos do formulario.
    nomeConta.innerHTML = 'Nome da Conta';
@@ -365,6 +431,15 @@ function en(){
    btnEs2.style.backgroundColor = "#ffffff";
    btnEs2.style.color = "#003262";
 
+   btnPt3.style.backgroundColor = "#ffffff";
+   btnPt3.style.color = "#003262";
+
+   btnEn3.style.backgroundColor = "#003262";
+   btnEn3.style.color = "#ffffff";
+
+   btnEs3.style.backgroundColor = "#ffffff";
+   btnEs3.style.color = "#003262";
+
    //comandos para alterar o idioma dos texos do formulario.
    nomeConta.innerHTML = 'Login';
    nomeConta.style.width = '40px';
@@ -437,6 +512,15 @@ function es(){
  
     btnEs2.style.backgroundColor = "#003262";
     btnEs2.style.color = "#ffffff";
+
+   btnPt3.style.backgroundColor = "#ffffff";
+   btnPt3.style.color = "#003262";
+
+   btnEn3.style.backgroundColor = "#ffffff";
+   btnEn3.style.color = "#003262";
+
+   btnEs3.style.backgroundColor = "#003262";
+   btnEs3.style.color = "#ffffff";
 
     
     //comandos para alterar o idioma dos texos do formulario.

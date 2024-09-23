@@ -40,11 +40,11 @@ body{
     justify-content: center;
 }
 .circulo{
-    border: solid 7px #f3f3f3;
-    border-top: 7px solid #615f5f;
+    border: solid 5px #f3f3f3;
+    border-top: 5px solid #252525;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     animation: girar 0.7s linear infinite;
 }
 @keyframes girar{
@@ -131,7 +131,7 @@ body{
     border-radius: 3px;
    
 }
- #pt2, #pt {
+ #pt2, #pt , #pt3{
      background-color: var(--cor-principal);
     color: #ffffff;
 }
@@ -299,7 +299,8 @@ input:focus{
     
 }
 
-#alerta-esqueci-usuario{
+#alerta-esqueci-usuario, #alerta-login{
+    font-family: roboto;
     position: fixed;
     top: 200%;
     left: 50%;
@@ -316,7 +317,7 @@ input:focus{
     
 }
 
-#alerta-esqueci-usuario div{
+.alerta-login-e-esqueciUsuario div{
     font-size: 1em;
     width: 340px;
     height: 340px;
@@ -324,15 +325,15 @@ input:focus{
     padding: 30px;
     border-radius: 6px;
 }
-#alerta-esqueci-usuario div h1{
+.alerta-login-e-esqueciUsuario div h1{
     font-size: 1.6em;
     padding: 10px  0px;
     color: #0C2340;
 }
-#alerta-esqueci-usuario div p{
+.alerta-login-e-esqueciUsuario div p{
     margin-bottom: 40px;
 }
-#alerta-esqueci-usuario div a{
+.alerta-login-e-esqueciUsuario div a{
     border: 1px solid #0C2340;
     padding: 8px 70px;
     color: #0C2340;
@@ -342,7 +343,7 @@ input:focus{
     cursor: pointer;
     
 }
-#alerta-esqueci-usuario div a:hover{
+.alerta-login-e-esqueciUsuario div a:hover{
     background-color: #0C2340;
     color: white;
 }

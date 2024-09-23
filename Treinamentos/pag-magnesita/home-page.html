@@ -44,7 +44,7 @@
             <p class="p2">PORTAL</p>
             <p class="p3">ATTRACT TO GROW</p>
     
-            <form action="#" method="post" target="_blank">
+            <form action="#" method="post" target="_blank" onsubmit="submit(event)">
     
                 <div class="teste">
                     <label for="nome" id="nome-conta" class="nome-conta" >Nome da Conta</label>
@@ -79,15 +79,7 @@
             </form>
         </section>
     
-        <div id="alerta-esqueci-usuario">
-            <div>
-                <h1 id="alerta-h1">Esqueci meu usuário</h1>
-                <p id="alerta-p">
-                    Seu usuário é o seu PeopleID (Chris ID) da empresa. Caso não saiba o ID,  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.
-                </p>
-                <a onclick="botaoOK()">Ok!</a>
-            </div>
-        </div>
+        
   </div>
 
 
@@ -105,6 +97,26 @@
     <div class="circulo"></div>
 
   </div>
+
+  <div id="alerta-esqueci-usuario" class="alerta-login-e-esqueciUsuario">
+    <div>
+        <h1 id="alerta-h1">Esqueci meu usuário</h1>
+        <p id="alerta-p">
+            Seu usuário é o seu PeopleID (Chris ID) da empresa. Caso não saiba o ID,  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.
+        </p>
+        <a onclick="botaoOK()">Ok!</a>
+    </div>
+</div>
+
+<div id="alerta-login" class="alerta-login-e-esqueciUsuario">
+    <div>
+        <h1 id="alerta-login-h1">PeopleID</h1>
+        <p id="alerta-login-p">
+            Você logou utilizando sua matricula e número da empresa. Da próxima vez use seu People ID. Ele é: 0000000.
+        </p>
+        <a onclick="botaoOKalertaLogin()">Ok!</a>
+    </div>
+</div>
 
 
 
