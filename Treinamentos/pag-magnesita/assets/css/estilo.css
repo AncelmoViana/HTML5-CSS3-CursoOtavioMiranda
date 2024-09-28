@@ -23,11 +23,11 @@ body{
    
 }
 #pagina-consulta-ex-funcionarios{
-    display: block;
+    display: none;
 }
 
 #pagina-home-page{
-    display: none;
+    display: block;
 }
 
 
