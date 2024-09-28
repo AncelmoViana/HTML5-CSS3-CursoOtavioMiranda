@@ -22,9 +22,12 @@ body{
     box-sizing: border-box;
    
 }
+#pagina-consulta-ex-funcionarios{
+    display: block;
+}
 
 #pagina-home-page{
-    display: block;
+    display: none;
 }
 
 

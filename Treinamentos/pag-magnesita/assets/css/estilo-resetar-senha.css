@@ -135,6 +135,7 @@ form .alerta-1{
 
 
 .correto-peopleID, 
+.correto-peopleID-2,
 .correto-cpf, 
 .correto-nascimento, 
 .correto-admissao{
@@ -142,7 +143,7 @@ form .alerta-1{
     margin: 30px 0 0 5px;
 
 }
-.icon-correto{
+.icon-correto {
    
     width: 18px;
     height: 18px;
@@ -231,9 +232,16 @@ form .alerta-1{
     display: none;
 
 } 
+#correto-peopleID-2{
+    display: none;
+
+}
 .correto-cpf{
     display: none;
 
+}
+#correto-cpf-2{
+    display: none;
 }
 .correto-nascimento{
     display: none;

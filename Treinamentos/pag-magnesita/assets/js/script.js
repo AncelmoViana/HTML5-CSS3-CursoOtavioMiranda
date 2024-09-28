@@ -289,7 +289,7 @@ function btnConsultaExFunc(){
    homePage.style.display = 'none';
    esqueciSenhaPage.style.display = 'block';
    
-   h1Header.innerHTML = 'kdkdk'
+   h1Header.innerHTML = 'ACESSO - EX FUNCIONÁRIO'
 
    function pt(){
       h1Header.innerText = 'hhshsh';

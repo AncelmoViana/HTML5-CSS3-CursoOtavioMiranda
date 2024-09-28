@@ -332,7 +332,154 @@
           
         </div>
 
-    </div>   
+    </div>  
+    
+    
+
+
+
+
+
+
+
+    <div id="pagina-consulta-ex-funcionarios">
+        
+        <header>
+        
+            
+            <div class="elementos-1">
+                <div><img class="logo-p-mag" src="assets/imagens/logoMag.png" alt="logo da magnesita"></div>
+                <div class="languages">
+                    <input type="button" value="pt" id="pt4" class="lang pt" onclick="pt()">
+                    <input type="button" value="en" id="en4" class="lang en" onclick="en()">
+                    <input type="button" value="es" id="es4" class="lang es" onclick="es()">
+                </div>
+            </div>
+        
+            <div>
+                <h1>PAG - Portal Attract to Grow</h1>
+            </div>
+            <div onclick="goToHomePage()">
+                <a><img src="assets/imagens/exit.png" alt="icon sair" class="icon-sair"></a>
+            </div>
+        
+        </header>
+        <form action="#" method="post" target="_blank">
+            <h1 id="h1-header-2">ACESSO - EX FUNCIONÁRIO</h1>
+            <div class="formulario2">
+        
+        
+        
+        
+        
+        
+                <div class="inputs">
+                    <div class="alerta-1">
+        
+        
+                        <div>
+                            <div class="fundo-icon">
+                                <div class="traco-1"></div>
+                                <div class="traco-2"></div>
+                            </div>
+                        </div>
+                        <p id="p-form-2"> Para login insira informaçoes abaixo</p>
+                    </div>
+                    <div class="teste1">
+                        
+                        <label for="PeopleID" id="people-id-l-2" class="people-id-l">PeopleID</label>
+                        <div class="form-icones">
+                            <input type="text" name="PeopleID" id="PeopleID-2" placeholder="999999" onkeyup="validarpeopeID()">
+                            <div>
+                                <div class="icon-correto  correto-peopleID" id="correto-peopleID-2">
+                                    <div class="parte1"></div>
+                                    <div class="parte2"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+                        
+    
+                        <label for="cpf" id="cpf-l-2" class="cpf-l">CPF</label>
+                        <div class="form-icones">
+                            <input type="text" name="cpf" id="cpf-2" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeyup="validarCPF()">
+                                <div class="error-cpf" id="error-cpf-2">
+                                    <div class="icon-error">
+                                        <div class="traco-3"></div>
+                                        <div class="traco-4"></div>
+                                    </div>
+                                </div>
+    
+                                <div class="correto-cpf" id="correto-cpf-2">
+                                    <div class="icon-correto" >
+                                        <div class="parte1"></div>
+                                        <div class="parte2"></div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                        
+    
+                        <label for="nascimento" id="nascimento-l-2" class="nascimento-l">Data de Nascimento</label>
+                        <div class="form-icones">
+                            <input type="text" name="nascimento" id="nascimento-2" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarData()">
+                            <div class="error-nascimento" id="error-nascimento-2">
+                                <div class="icon-error">
+                                    <div class="traco-3"></div>
+                                    <div class="traco-4"></div>
+                                </div>
+                            </div>
+                            <div class="correto-nascimento" id="correto-nascimento-2">
+                                <div class="icon-correto">
+                                    <div class="parte1"></div>
+                                    <div class="parte2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+    
+                        <label for="admissao" id="admissao-l-2" class="admissao-l">Data de Admissão</label>
+                        <div class="form-icones">
+                            <input type="text" name="admissao" id="admissao-2" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="validarDataAdmissao()">
+                            <div class="error-admissao" id="error-admissao-2">
+                                <div class="icon-error">
+                                    <div class="traco-3"></div>
+                                    <div class="traco-4"></div>
+                                </div>
+                            </div>
+                            <div class="correto-admissao" id="correto-admissao-2">
+                                <div class="icon-correto">
+                                    <div class="parte1"></div>
+                                    <div class="parte2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+                        <div id="login-ex-func"><a href="#" >Login Ex Funcionário</a></div>
+    
+    
+                        
+                            <div id="container-link-final-2" onclick="mostrarAviso()">
+                                <div id="link-final-reset-senha-2"><a>NÃO SEI MEU PEOPLEID  </a></div>
+                                
+                                
+                                <img src="assets/imagens/seta-direita.png" alt="seta apontando para a direta" id="seta">
+                               
+                            </div>
+                        
+                            <div id="text-hide-2"><p>Caso não saiba o valor do PeopleID (Chris ID),  use o código de empresa junto com sua matrícula. O código de empresa é 11 para Magnesita Refratarios e 13 para Magnesita Mineração. Exemplo: 1388888.</p></div>
+                        
+                    </div>
+        
+                </div>
+        
+            </div>
+        </form>
+    
+      </div>
  
 
 
@@ -345,6 +492,7 @@
     <script src="assets/js/jquery.mask.min.js"></script>
     <script>
         $("#cpf").mask("000.000.000-00");
+        $("#cpf-2").mask("000.000.000-00");
         $("#nascimento").mask("99/99/9999");
         $("#admissao").mask("99/99/9999");
     </script>
