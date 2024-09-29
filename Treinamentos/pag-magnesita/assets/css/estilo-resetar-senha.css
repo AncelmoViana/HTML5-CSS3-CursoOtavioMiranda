@@ -228,7 +228,7 @@ form .alerta-1{
     
 }
 
-.correto-peopleID{
+#correto-peopleID{
     display: none;
 
 } 
@@ -236,29 +236,29 @@ form .alerta-1{
     display: none;
 
 }
-.correto-cpf{
+#correto-cpf{
     display: none;
 
 }
 #correto-cpf-2{
     display: none;
 }
-.correto-nascimento{
+#correto-nascimento, #correto-nascimento-2{
     display: none;
 }
-.correto-admissao{
+#correto-admissao, #correto-admissao-2{
     display: none;
 }
 
 
-.error-cpf{
+#error-cpf, #error-cpf-2{
     display: none;  
 
 }
-.error-nascimento{
+#error-nascimento, #error-nascimento-2{
     display: none;
 }
-.error-admissao{
+#error-admissao, #error-admissao-2{
     display: none;
 }
 
@@ -341,7 +341,7 @@ form .formulario2 label{
 
 }
 
-#link-reset-senha{
+#link-reset-senha, #login-ex-func{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,7 +355,7 @@ form .formulario2 label{
     align-self: center;
     cursor: pointer;
 }
-#link-reset-senha a{
+#link-reset-senha a, #login-ex-func a{
     font-family: roboto;
     font-weight: bold;
     color: white;
@@ -364,26 +364,26 @@ form .formulario2 label{
 
     
 }
-#link-final-reset-senha{
+#link-final-reset-senha, #link-final-reset-senha-2{
     margin-top:25px ;
     font-family: roboto;
     cursor: pointer;
     
 
 }
-#link-final-reset-senha a{
+#link-final-reset-senha a, #link-final-reset-senha-2 a{
     font-weight: bold;
     color: var(--cor-principal);
     text-decoration: none;
     cursor: pointer;
 }
-#container-link-final{
+#container-link-final, #container-link-final-2{
     display: flex;
     height: 50px;
     gap: 6px;
     
 }
-#seta{
+#seta, #seta-2{
     width: 1.6em;
     height: 1.6em;
     transform: rotate(0deg) translateY(8px);
@@ -395,7 +395,7 @@ form .formulario2 label{
   
 }
 
-#text-hide{
+#text-hide, #text-hide-2{
     padding: 30px;
     display: none;
     color: #003262;

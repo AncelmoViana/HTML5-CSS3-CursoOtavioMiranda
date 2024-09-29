@@ -281,19 +281,60 @@ let labelAdmissao = document.getElementById('admissao-l')
 let btnResetSenha = document.getElementById('link-reset-senha');
 let btnNaoSeiMeuID = document.getElementById('link-final-reset-senha');
 let txtHide = document.getElementById('text-hide');
+let txtHide2 = document.getElementById('text-hide-2');
+
+let seta2 = document.getElementById('seta-2');
+
+
+textHide.style.display = 'none';
+seta.style.transform = 'rotate(0deg) translateY(8px)'
+
+textHide2.style.display = 'none';
+seta2.style.transform = 'rotate(0deg) translateY(8px)'
+
+
+function mostrarAviso(){
+    //if(textHide.style.display == 'none'){
+       
+
+        if(textHide.style.display == 'none'){
+            textHide.style.display = 'block';
+            seta.style.transform = 'rotate(90deg) translateX(8px)';
+
+        }
+    
+        else{
+            textHide.style.display = 'none';
+             seta.style.transform = 'rotate(0deg) translateY(8px)'
+            
+        }
+
+      if(textHide2.style.display == 'none'){
+         textHide2.style.display = 'block';
+         seta2.style.transform = 'rotate(90deg) translateX(8px)';
+
+     }
+ 
+     else{
+         textHide2.style.display = 'none';
+          seta2.style.transform = 'rotate(0deg) translateY(8px)'
+         
+     }
+}
+    
+
+
 
 
 
 
 function btnConsultaExFunc(){
-   homePage.style.display = 'none';
-   esqueciSenhaPage.style.display = 'block';
-   
-   h1Header.innerHTML = 'ACESSO - EX FUNCIONÁRIO'
 
-   function pt(){
-      h1Header.innerText = 'hhshsh';
-   }
+   let consultaExFunc = document.getElementById('pagina-consulta-ex-funcionarios');
+   
+   homePage.style.display = 'none';
+   consultaExFunc.style.display = 'block';
+   
 }
 
 btnResetSenha.style.color = '#FFFFFF';
@@ -568,24 +609,3 @@ function es(){
 
 
 }
-textHide.style.display = 'none';
-seta.style.transform = 'rotate(0deg) translateY(8px)'
-
-
-function mostrarAviso(){
-    //if(textHide.style.display == 'none'){
-       
-
-        if(textHide.style.display == 'none'){
-            textHide.style.display = 'block';
-            seta.style.transform = 'rotate(90deg) translateX(8px)';
-
-        }
-    
-        else{
-            textHide.style.display = 'none';
-             seta.style.transform = 'rotate(0deg) translateY(8px)'
-            
-        }
-    }
-    
