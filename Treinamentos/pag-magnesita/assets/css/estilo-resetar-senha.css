@@ -355,6 +355,11 @@ form .formulario2 label{
     align-self: center;
     cursor: pointer;
 }
+#link-reset-senha:active, #login-ex-func:active{
+    background-color: #00336233;
+
+
+}
 #link-reset-senha a, #login-ex-func a{
     font-family: roboto;
     font-weight: bold;
@@ -377,6 +382,7 @@ form .formulario2 label{
     text-decoration: none;
     cursor: pointer;
 }
+
 #container-link-final, #container-link-final-2{
     display: flex;
     height: 50px;

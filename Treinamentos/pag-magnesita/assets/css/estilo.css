@@ -22,9 +22,9 @@ body{
     box-sizing: border-box;
    
 }
-a, button {
-    outline: none;
-}
+
+
+
 #pagina-consulta-ex-funcionarios{
     display: none;
 }
@@ -82,19 +82,20 @@ a, button {
    
 }
 
-.logo-g img{
-    position: relative;
-    top: -480px;
-    margin-left: 720px;
-    width: 100%;
-
-
-
-
- 
-  
-  
+.logo-g{
+    
+    float: right
 }
+@media (max-width: 2000px){
+    .logo-g{
+        position: absolute;
+        right: -100%;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: right 0.5s ease-in-out;
+    }
+}
+
 
 .formulario{
    position: absolute;
@@ -280,6 +281,9 @@ input:focus{
     border-radius: 4px;
 
 }
+.formulario form #entrar:active{
+    background-color: #00336233;
+}
 .formulario form #entrar-sso{
     display: inline;
     font-family: roboto;
@@ -294,6 +298,10 @@ input:focus{
 
 
 }
+.formulario form #entrar-sso:active{
+    color: #00336233;
+    border: 2.3px solid #00336233;
+}
 
 
 .formulario form #link-final{
@@ -304,7 +312,9 @@ input:focus{
    
     
 }
-
+.formulario form #link-final:active{
+    color: #0033624d;
+}
 #alerta-esqueci-usuario, #alerta-login{
     font-family: roboto;
     position: fixed;
