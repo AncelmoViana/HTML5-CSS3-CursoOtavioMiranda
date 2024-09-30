@@ -25,6 +25,11 @@ let iconErroNascimento2 = document.getElementById('error-nascimento-2');
 let iconErroAdmissao = document.getElementById('error-admissao');
 let iconErroAdmissao2 = document.getElementById('error-admissao-2');
 
+function goToHomePage(){
+  peopleID.value = "";
+  peopleID2.value = "";
+}
+
 
 
 

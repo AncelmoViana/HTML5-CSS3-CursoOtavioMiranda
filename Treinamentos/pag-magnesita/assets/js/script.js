@@ -14,6 +14,11 @@ let btnPt3 = document.getElementById('pt3');
 let btnEs3 = document.getElementById('es3');
 
 
+let btnEn4 = document.getElementById('en4');
+let btnPt4 = document.getElementById('pt4');
+let btnEs4 = document.getElementById('es4');
+
+
 
 
 
@@ -44,6 +49,7 @@ let body = document.getElementById('body');
 
 let homePage = document.getElementById('pagina-home-page');
 let esqueciSenhaPage = document.getElementById('pagina-resetar-senha');
+let consultaExFunc = document.getElementById('pagina-consulta-ex-funcionarios');
 
 let contador = 0;
 
@@ -268,8 +274,33 @@ function goToHomePage(){
    homePage.style.display = 'block';
    esqueciSenhaPage.style.display = 'none';
    paginaLogado.style.display = 'none';
+   consultaExFunc.style.display = 'none';
    verificador1 = 0;
    verificador2 = 0;
+   peopleID.value = "";
+   peopleID2.value = "";
+   cpf.value = "";
+   cpf2.value = "";
+   nascimento.value = "";
+   nascimento2.value = "";
+   admissao.value = "";
+   admissao2.value = "";
+   iconCorretoPeopleid.style.display = 'none';
+   iconCorretoPeopleid2.style.display = 'none';
+   iconErroCpf.style.display = 'none';
+   iconCorretoCpf.style.display = 'none';
+   iconErroCpf2.style.display = 'none';
+   iconCorretoCpf2.style.display = 'none';
+   iconErroNascimento.style.display = 'none';
+   iconCorretoNascimento.style.display = 'none';
+   iconErroNascimento2.style.display = 'none';
+   iconCorretoNascimento2.style.display = 'none';
+   iconErroAdmissao.style.display = 'none';
+   iconCorretoAdmissao.style.display = 'none';
+   iconErroAdmissao2.style.display = 'none';
+   iconCorretoAdmissao2.style.display = 'none';
+   
+
 }
 
 let h1Header = document.getElementById('h1-header');
@@ -282,14 +313,17 @@ let btnResetSenha = document.getElementById('link-reset-senha');
 let btnNaoSeiMeuID = document.getElementById('link-final-reset-senha');
 let txtHide = document.getElementById('text-hide');
 let txtHide2 = document.getElementById('text-hide-2');
-
+let seta = document.getElementById("seta");
 let seta2 = document.getElementById('seta-2');
 
 
-textHide.style.display = 'none';
+
+txtHide.style.display = 'none';
 seta.style.transform = 'rotate(0deg) translateY(8px)'
 
-textHide2.style.display = 'none';
+
+
+txtHide2.style.display = 'none';
 seta2.style.transform = 'rotate(0deg) translateY(8px)'
 
 
@@ -297,29 +331,31 @@ function mostrarAviso(){
     //if(textHide.style.display == 'none'){
        
 
-        if(textHide.style.display == 'none'){
-            textHide.style.display = 'block';
+        if(txtHide.style.display == 'none'){
+            txtHide.style.display = 'block';
             seta.style.transform = 'rotate(90deg) translateX(8px)';
 
         }
     
         else{
-            textHide.style.display = 'none';
+            txtHide.style.display = 'none';
              seta.style.transform = 'rotate(0deg) translateY(8px)'
             
         }
 
-      if(textHide2.style.display == 'none'){
-         textHide2.style.display = 'block';
+        if(txtHide2.style.display == 'none'){
+         txtHide2.style.display = 'block';
          seta2.style.transform = 'rotate(90deg) translateX(8px)';
 
-     }
+      }
  
-     else{
-         textHide2.style.display = 'none';
+      else{
+         txtHide2.style.display = 'none';
           seta2.style.transform = 'rotate(0deg) translateY(8px)'
          
-     }
+      }
+
+    
 }
     
 
@@ -330,7 +366,7 @@ function mostrarAviso(){
 
 function btnConsultaExFunc(){
 
-   let consultaExFunc = document.getElementById('pagina-consulta-ex-funcionarios');
+  
    
    homePage.style.display = 'none';
    consultaExFunc.style.display = 'block';
@@ -345,8 +381,8 @@ btnResetSenha.style.fontSize= '0.85em';
 btnNaoSeiMeuID.style.fontWeight = 'bold'
 
 
-let seta = document.getElementById("seta");
-let textHide = document.getElementById("text-hide");
+
+
 
 
 
@@ -385,6 +421,16 @@ function pt(){
 
     btnEs3.style.backgroundColor = "#ffffff";
     btnEs3.style.color = "#003262";
+
+
+    btnPt4.style.backgroundColor = "#003262";
+    btnPt4.style.color = "#ffffff";
+
+    btnEn4.style.backgroundColor = "#ffffff";
+    btnEn4.style.color = "#003262";
+
+    btnEs4.style.backgroundColor = "#ffffff";
+    btnEs4.style.color = "#003262";
 
 
     
@@ -481,6 +527,17 @@ function en(){
    btnEs3.style.backgroundColor = "#ffffff";
    btnEs3.style.color = "#003262";
 
+
+   
+   btnPt4.style.backgroundColor = "#ffffff";
+   btnPt4.style.color = "#003262";
+
+   btnEn4.style.backgroundColor = "#003262";
+   btnEn4.style.color = "#ffffff";
+
+   btnEs4.style.backgroundColor = "#ffffff";
+   btnEs4.style.color = "#003262";
+
    //comandos para alterar o idioma dos texos do formulario.
    nomeConta.innerHTML = 'Login';
    nomeConta.style.width = '40px';
@@ -562,6 +619,16 @@ function es(){
 
    btnEs3.style.backgroundColor = "#003262";
    btnEs3.style.color = "#ffffff";
+
+
+   btnPt4.style.backgroundColor = "#ffffff";
+   btnPt4.style.color = "#003262";
+
+   btnEn4.style.backgroundColor = "#ffffff";
+   btnEn4.style.color = "#003262";
+
+   btnEs4.style.backgroundColor = "#003262";
+   btnEs4.style.color = "#ffffff";
 
     
     //comandos para alterar o idioma dos texos do formulario.

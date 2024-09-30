@@ -134,7 +134,7 @@ body{
     border-radius: 3px;
    
 }
- #pt2, #pt , #pt3{
+ #pt2, #pt , #pt3, #pt4{
      background-color: var(--cor-principal);
     color: #ffffff;
 }
