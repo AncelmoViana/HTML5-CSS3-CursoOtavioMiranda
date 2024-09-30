@@ -299,6 +299,9 @@ function goToHomePage(){
    iconCorretoAdmissao.style.display = 'none';
    iconErroAdmissao2.style.display = 'none';
    iconCorretoAdmissao2.style.display = 'none';
+
+   txtHide.style.display = 'none';
+   txtHide2.style.display = 'none';
    
 
 }
