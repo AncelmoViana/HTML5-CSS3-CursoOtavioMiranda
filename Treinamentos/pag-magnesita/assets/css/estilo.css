@@ -22,6 +22,9 @@ body{
     box-sizing: border-box;
    
 }
+a, button {
+    outline: none;
+}
 #pagina-consulta-ex-funcionarios{
     display: none;
 }
