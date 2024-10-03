@@ -76,7 +76,7 @@ function AlertaesqueciSenha(){
 
    }
    else if (contador == 1){
-      var r=confirm("Forgot my password \nthe default password are your 4 first digits of your CPF. Click in cancel to test again, or clink in OK to reset your password.");
+      var r=confirm("Forgot my password \nthe default password are your 4 first digits of your CPF. Click in cancel to test again, or click in OK to reset your password.");
       if (r==true)
       {
          homePage.style.display = 'none';
